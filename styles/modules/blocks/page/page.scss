@@ -1,0 +1,18 @@
+@import "../../../helpers/variables";
+
+.page {
+  box-sizing: border-box;
+  font-family: $font;
+  display: flex;
+  align-items: center;
+  background-color: $theme-background;
+  color: $theme-text-color;
+  line-height: 1.56;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 18px;
+  min-height: 100vh;
+  margin: 0 auto;
+  min-width: $page-min-width;
+  width: 100%;
+}

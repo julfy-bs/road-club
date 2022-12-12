@@ -1,0 +1,73 @@
+@import '../node_modules/normalize.css/normalize.css';
+@import '../vendor/fonts/fonts.css';
+.page {
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  color: rgba(34, 34, 34, 0.4392156863);
+  line-height: 1.56;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 18px;
+  min-height: 100vh;
+  margin: 0 auto;
+  min-width: 320px;
+  width: 100%;
+}
+
+.page__header {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.page__content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.page__footer {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.page__button {
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 0;
+}
+
+.page__image {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page__link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.page__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page__paragraph {
+  margin: 0;
+  padding: 0;
+}
+
+.page__title {
+  margin: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

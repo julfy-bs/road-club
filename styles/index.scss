@@ -1,0 +1,13 @@
+@import "../node_modules/normalize.css/normalize.css";
+@import "../vendor/fonts/fonts.css";
+@import "./helpers/variables.scss";
+@import './modules/blocks/page/page.scss';
+@import './modules/blocks/page/__header/page__header';
+@import './modules/blocks/page/__content/page__content';
+@import './modules/blocks/page/__footer/page__footer';
+@import './modules/blocks/page/__button/page__button';
+@import './modules/blocks/page/__image/page__image';
+@import './modules/blocks/page/__link/page__link';
+@import './modules/blocks/page/__list/page__list';
+@import './modules/blocks/page/__paragraph/page__paragraph';
+@import './modules/blocks/page/__title/page__title';
