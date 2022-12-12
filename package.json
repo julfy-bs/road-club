@@ -9,7 +9,7 @@
     "all:fix": "lint-staged",
     "prepare": "husky install",
     "sass-dev": "sass --watch --update --style=expanded styles/index.scss/:styles/main.css",
-    "sass-prod": "sass --no-source-map --style=compressed styles/modules/blocks/scss:assets/css"
+    "sass-prod": "sass --no-source-map --style=compressed styles/index.scss/:styles/main.css"
   },
   "devDependencies": {
     "eslint": "^8.28.0",
