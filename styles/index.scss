@@ -1,6 +1,6 @@
 @import '../node_modules/normalize.css/normalize.css';
 @import '../vendor/fonts/fonts.css';
-@import './helpers/variables.scss';
+@import '../vendor/variables';
 @import './modules/blocks/page/page.scss';
 @import './modules/blocks/page/__header/page__header';
 @import './modules/blocks/page/__content/page__content';

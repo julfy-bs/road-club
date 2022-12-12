@@ -16,7 +16,7 @@ $color-chinese-silver-80: #c7c7c780;
 $color-chinese-silver-light: #cacaca;
 $color-platinum-227: #e3e3e3;
 $color-platinum-229: #e5e5e5;
-$color-platinum-230: #e6e6e6;
+$color-platinum-230: #e6e6e670;
 $color-arsenic: #434343;
 $color-granite-gray: #676767;
 $color-gray: #7d7d7d;
@@ -30,19 +30,28 @@ $color-dark-silver-110: #6e6e6e;
 $color-dark-silver-112: #707070;
 $color-silver-chalice: #adadad;
 
-// font
-$font: 'Inter', Arial, sans-serif;
+:root {
+  /* font */
+  --font: 'Inter', Arial, sans-serif;
 
-// theme
+  /* page */
+  --page-min-width: 320px;
+  --page-content-width: 1200px;
+  --page-max-width: 1440px;
 
-$theme-background: #{$color-cultured};
-$theme-title-color: #{$color-black-chinese};
-$theme-text-color: #{$color-black-raisin};
+  /* header */
+  --header-height: 56px;
+}
 
-// page
-$page-min-width: 320px;
-$page-content-width: 1200px;
-$page-max-width: 1440px;
+:root .page_theme_light {
+  /* theme */
+  --theme-background: #{$color-cultured};
+  --theme-title-color: #{$color-black-chinese};
+  --theme-text-color: #{$color-black-raisin};
+}
 
-// Header
-$header-height: 56px;
+:root .page_theme_dark {
+  --theme-background: #{$color-dark-charcoal-51};
+  --theme-title-color: #{$color-white};
+  --theme-text-color: #{$color-platinum-230};
+}

@@ -1,19 +1,43 @@
 @import '../node_modules/normalize.css/normalize.css';
 @import '../vendor/fonts/fonts.css';
+:root {
+  /* font */
+  --font: 'Inter', Arial, sans-serif;
+  /* page */
+  --page-min-width: 320px;
+  --page-content-width: 1200px;
+  --page-max-width: 1440px;
+  /* header */
+  --header-height: 56px;
+}
+
+:root .page_theme_light {
+  /* theme */
+  --theme-background: #f4f4f4;
+  --theme-title-color: #151515;
+  --theme-text-color: rgba(34, 34, 34, 0.4392156863);
+}
+
+:root .page_theme_dark {
+  --theme-background: #333333;
+  --theme-title-color: #fff;
+  --theme-text-color: rgba(230, 230, 230, 0.4392156863);
+}
+
 .page {
   box-sizing: border-box;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: var(--font);
   display: flex;
   align-items: center;
-  background-color: #f4f4f4;
-  color: rgba(34, 34, 34, 0.4392156863);
+  background-color: var(--theme-background);
+  color: var(--theme-text-color);
   line-height: 1.56;
   flex-direction: column;
   font-weight: 400;
   font-size: 18px;
   min-height: 100vh;
   margin: 0 auto;
-  min-width: 320px;
+  min-width: var(--page-min-width);
   width: 100%;
 }
 
