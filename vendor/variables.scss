@@ -1,0 +1,57 @@
+// colors
+$color-black-chinese: #151515;
+$color-white: #fff;
+$color-cultured: #f4f4f4;
+$color-green-crayola: #24b47e;
+$color-black: #000;
+$color-coquelicot: #ff3d00;
+$color-gray-bright: #ebebeb;
+$color-black-raisin: #22222270;
+$color-illuminating-emerald: #319e75;
+$color-american-silver: #cfcfcf;
+$color-dark-charcoal-51: #333333;
+$color-dark-charcoal-47: #2f2f2f;
+$color-chinese-silver: #c7c7c7;
+$color-chinese-silver-80: #c7c7c780;
+$color-chinese-silver-light: #cacaca;
+$color-platinum-227: #e3e3e3;
+$color-platinum-229: #e5e5e5;
+$color-platinum-230: #e6e6e670;
+$color-arsenic: #434343;
+$color-granite-gray: #676767;
+$color-gray: #7d7d7d;
+$color-gray-80: #7d7d7d80;
+$color-winter-sky: #ff007a;
+$color-gray-light: #d7d4d4;
+$color-gray-davy-54: #545454;
+$color-gray-davy-56: #565656;
+$color-bleu-de-france: #1f86e5;
+$color-dark-silver-110: #6e6e6e;
+$color-dark-silver-112: #707070;
+$color-silver-chalice: #adadad;
+
+:root {
+  /* font */
+  --font: 'Inter', Arial, sans-serif;
+
+  /* page */
+  --page-min-width: 320px;
+  --page-content-width: 1200px;
+  --page-max-width: 1440px;
+
+  /* header */
+  --header-height: 56px;
+}
+
+:root .page_theme_light {
+  /* theme */
+  --theme-background: #{$color-cultured};
+  --theme-title-color: #{$color-black-chinese};
+  --theme-text-color: #{$color-black-raisin};
+}
+
+:root .page_theme_dark {
+  --theme-background: #{$color-dark-charcoal-51};
+  --theme-title-color: #{$color-white};
+  --theme-text-color: #{$color-platinum-230};
+}

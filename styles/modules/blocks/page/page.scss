@@ -1,0 +1,16 @@
+.page {
+  box-sizing: border-box;
+  font-family: var(--font);
+  display: flex;
+  align-items: center;
+  background-color: var(--theme-background);
+  color: var(--theme-text-color);
+  line-height: 1.56;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 18px;
+  min-height: 100vh;
+  margin: 0 auto;
+  min-width: var(--page-min-width);
+  width: 100%;
+}
