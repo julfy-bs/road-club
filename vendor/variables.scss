@@ -1,3 +1,5 @@
+@import "./styles/helpers/mixins/media";
+
 // colors
 $color-black-chinese: #151515;
 $color-white: #fff;
@@ -40,7 +42,11 @@ $color-silver-chalice: #adadad;
   --page-max-width: 1440px;
 
   /* header */
-  --header-height: 56px;
+  --header-height: 74px;
+
+  @include respond(laptop) {
+    --header-height: 56px;
+  }
 }
 
 :root .page_theme_light {

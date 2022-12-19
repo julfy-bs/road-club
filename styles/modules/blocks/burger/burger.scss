@@ -1,0 +1,30 @@
+@import "../../../helpers/mixins/media";
+
+.burger {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  padding: 10px 6px;
+
+  @include respond(laptop) {
+    display: none;
+  }
+
+  &:hover {
+    .burger__line {
+      opacity: .75;
+    }
+
+    .burger__line_position_top {
+      transform: translate(2px);
+    }
+    .burger__line_position_middle {
+      transform: translate(0);
+    }
+    .burger__line_position_bottom {
+      transform: translate(8px);
+    }
+  }
+}
+

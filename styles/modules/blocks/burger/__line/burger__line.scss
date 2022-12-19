@@ -1,0 +1,7 @@
+.burger__line {
+  background-color: var(--theme-title-color);
+  height: 2px;
+  position: absolute;
+  transition: background-color .5s, transform .25s, color .25s, opacity .25s;
+  width: 22px;
+}

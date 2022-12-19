@@ -1,6 +1,7 @@
 @import '../node_modules/normalize.css/normalize.css';
 @import '../vendor/fonts/fonts.css';
 @import '../vendor/variables';
+/* page */
 @import './modules/blocks/page/page.scss';
 @import './modules/blocks/page/__header/page__header';
 @import './modules/blocks/page/__content/page__content';
@@ -11,3 +12,20 @@
 @import './modules/blocks/page/__list/page__list';
 @import './modules/blocks/page/__paragraph/page__paragraph';
 @import './modules/blocks/page/__title/page__title';
+
+/* header */
+@import "./modules/blocks/header/header";
+@import "./modules/blocks/header/__wrapper/header__wrapper";
+
+/* navigation */
+@import "./modules/blocks/navigation/navigation";
+@import "./modules/blocks/navigation/__item/navigation__item";
+@import "./modules/blocks/navigation/__link/navigation__link";
+
+/* burger */
+@import "./modules/blocks/burger/burger";
+@import "./modules/blocks/burger/__container/burger__container";
+@import "./modules/blocks/burger/__line/burger__line";
+@import "modules/blocks/burger/__line/_position/burger__line_position_top";
+@import "./modules/blocks/burger/__line/_position/burger__line_position_middle";
+@import "modules/blocks/burger/__line/_position/burger__line_position_bottom";
