@@ -1,4 +1,4 @@
-@import "../../../helpers/mixins/media";
+@import '../../../helpers/mixins/media';
 
 .burger {
   align-items: center;
@@ -13,7 +13,7 @@
 
   &:hover {
     .burger__line {
-      opacity: .75;
+      opacity: 0.75;
     }
 
     .burger__line_position_top {
@@ -27,4 +27,3 @@
     }
   }
 }
-
