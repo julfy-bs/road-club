@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta
-      name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport"
     />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <title>Road club</title>
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link href="./styles/main.css" rel="stylesheet" />
   </head>
   <body class="page page_theme_light">
     <header class="page__header header">
@@ -16,17 +16,17 @@
         <nav>
           <ul class="page__list navigation">
             <li class="navigation__item">
-              <a href="#surface" class="page__link navigation__link">Покрытия и градиенты</a>
+              <a class="page__link navigation__link" href="#surface">Покрытия и градиенты</a>
             </li>
             <li class="navigation__item">
-              <a href="#bicycle" class="page__link navigation__link">Велосипеды</a>
+              <a class="page__link navigation__link" href="#bicycle">Велосипеды</a>
             </li>
             <li class="navigation__item">
-              <a href="#workout" class="page__link navigation__link">Тренировки</a>
+              <a class="page__link navigation__link" href="#workout">Тренировки</a>
             </li>
           </ul>
         </nav>
-        <button class="page__button burger" type="button" aria-label="Открыть меню">
+        <button aria-label="Открыть меню" class="page__button burger" type="button">
           <span class="burger__container">
             <span class="burger__line burger__line_position_top"></span>
             <span class="burger__line burger__line_position_middle"></span>
@@ -40,6 +40,34 @@
       <section class="section" id="bicycle"></section>
       <section class="section" id="workout"></section>
     </main>
-    <footer class="page__footer"></footer>
+    <footer class="page__footer footer">
+      <div class="footer__wrapper">
+        <div class="subscription">
+          <h3 class="page__title subscription__title">Подпишитесь на рассылку&nbsp;—</h3>
+          <form action="#" class="subscription__form">
+            <label>
+              <input class="page__input subscription__input" placeholder="Ваш e-mail" type="text" />
+            </label>
+          </form>
+        </div>
+        <div class="footer__content">
+          <p class="page__paragraph disclaimer">&copy; Road Club 2022</p>
+          <div class="logo"></div>
+          <div class="appearance appearance_position_footer">
+            <span class="appearance__icon appearance__icon_mode_light"></span>
+            <button
+              aria-label="Переключатель режима отображения"
+              class="page__button switch"
+              role="switch"
+              type="button"
+            >
+              <span class="switch__check"></span>
+            </button>
+            <span class="appearance__icon appearance__icon_mode_dark"></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

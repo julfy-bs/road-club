@@ -1,4 +1,4 @@
-@import './styles/helpers/mixins/media';
+@import '../styles/helpers/mixins/media';
 
 // colors
 $color-black-chinese: #151515;
@@ -14,6 +14,7 @@ $color-american-silver: #cfcfcf;
 $color-dark-charcoal-51: #333333;
 $color-dark-charcoal-47: #2f2f2f;
 $color-chinese-silver: #c7c7c7;
+$color-chinese-silver-50: #c7c7c750;
 $color-chinese-silver-80: #c7c7c780;
 $color-chinese-silver-light: #cacaca;
 $color-platinum-227: #e3e3e3;
@@ -22,6 +23,7 @@ $color-platinum-230: #e6e6e670;
 $color-arsenic: #434343;
 $color-granite-gray: #676767;
 $color-gray: #7d7d7d;
+$color-gray-50: #7d7d7d50;
 $color-gray-80: #7d7d7d80;
 $color-winter-sky: #ff007a;
 $color-gray-light: #d7d4d4;
@@ -33,6 +35,9 @@ $color-dark-silver-112: #707070;
 $color-silver-chalice: #adadad;
 
 :root {
+  /* general colors */
+  --color-white: #{$color-white};
+
   /* font */
   --font: 'Inter', Arial, sans-serif;
 
@@ -40,9 +45,17 @@ $color-silver-chalice: #adadad;
   --page-min-width: 320px;
   --page-content-width: 1200px;
   --page-max-width: 1440px;
+  --page-padding-side: 18px;
 
   /* header */
   --header-height: 74px;
+
+  /* switch */
+  --swith-dot-color: #{$color-green-crayola};
+
+  @include respond(tablet) {
+    --page-padding-side: 12px;
+  }
 
   @include respond(laptop) {
     --header-height: 56px;
@@ -52,12 +65,22 @@ $color-silver-chalice: #adadad;
 :root .page_theme_light {
   /* theme */
   --theme-background: #{$color-cultured};
+  --theme-background-footer: #{$color-gray-bright};
   --theme-title-color: #{$color-black-chinese};
-  --theme-text-color: #{$color-black-raisin};
+  --theme-text-primary-color: #{$color-black-raisin};
+  --theme-text-secondary-color: #{$color-american-silver};
+  --theme-border-color: #{$color-chinese-silver-50};
+  --theme-switch-background: #{$color-white};
+  --theme--switch-icon-color: #{$color-american-silver};
 }
 
 :root .page_theme_dark {
   --theme-background: #{$color-dark-charcoal-51};
+  --theme-background-footer: #{$color-dark-charcoal-47};
   --theme-title-color: #{$color-white};
-  --theme-text-color: #{$color-platinum-230};
+  --theme-text-primary-color: #{$color-platinum-230};
+  --theme-text-secondary-color: #{$color-gray-davy-56};
+  --theme-border-color: #{$color-gray-50};
+  --theme-switch-background: #{$color-gray-davy-54};
+  --theme--switch-icon-color: #{$color-granite-gray};
 }

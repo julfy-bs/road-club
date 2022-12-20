@@ -12,6 +12,7 @@
 @import './modules/blocks/page/__list/page__list';
 @import './modules/blocks/page/__paragraph/page__paragraph';
 @import './modules/blocks/page/__title/page__title';
+@import './modules/blocks/page/__input/page__input';
 
 /* header */
 @import './modules/blocks/header/header';
@@ -29,3 +30,34 @@
 @import 'modules/blocks/burger/__line/_position/burger__line_position_top';
 @import './modules/blocks/burger/__line/_position/burger__line_position_middle';
 @import 'modules/blocks/burger/__line/_position/burger__line_position_bottom';
+
+/* footer */
+@import './modules/blocks/footer/footer';
+@import './modules/blocks/footer/__wrapper/footer__wrapper';
+@import './modules/blocks/footer/__content/footer__content';
+
+/* subscription */
+@import './modules/blocks/subscription/subscription';
+@import 'modules/blocks/subscription/__title/subscription__title';
+@import 'modules/blocks/subscription/__form/subscription__form';
+@import 'modules/blocks/subscription/__input/subscription__input';
+
+
+/* disclaimer */
+@import 'modules/blocks/disclaimer/disclaimer';
+
+/* logo */
+@import 'modules/blocks/logo/logo';
+
+/* appearance */
+@import './modules/blocks/appearance/appearance';
+@import './modules/blocks/appearance/_position/appearance_position_footer';
+@import './modules/blocks/appearance/__icon/appearance__icon';
+@import './modules/blocks/appearance/__icon/_mode/appearance__icon_mode_light';
+@import './modules/blocks/appearance/__icon/_mode/appearance__icon_mode_dark';
+
+
+/* switch */
+@import './modules/blocks/switch/switch';
+@import './modules/blocks/switch/_active/switch_active';
+@import './modules/blocks/switch/__check/switch__check';
