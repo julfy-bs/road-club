@@ -11,8 +11,35 @@
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body class="page page_theme_light">
-    <header class="page__header"></header>
-    <main class="page__content"></main>
+    <header class="page__header header">
+      <div class="header__wrapper">
+        <nav>
+          <ul class="page__list navigation">
+            <li class="navigation__item">
+              <a href="#surface" class="page__link navigation__link">Покрытия и градиенты</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#bicycle" class="page__link navigation__link">Велосипеды</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#workout" class="page__link navigation__link">Тренировки</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="page__button burger" type="button" aria-label="Открыть меню">
+          <span class="burger__container">
+            <span class="burger__line burger__line_position_top"></span>
+            <span class="burger__line burger__line_position_middle"></span>
+            <span class="burger__line burger__line_position_bottom"></span>
+          </span>
+        </button>
+      </div>
+    </header>
+    <main class="page__content">
+      <section class="section" id="surface"></section>
+      <section class="section" id="bicycle"></section>
+      <section class="section" id="workout"></section>
+    </main>
     <footer class="page__footer"></footer>
   </body>
 </html>

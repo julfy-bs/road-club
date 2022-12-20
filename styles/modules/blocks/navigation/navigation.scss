@@ -1,0 +1,10 @@
+@import '../../../helpers/mixins/media';
+
+.navigation {
+  display: none;
+  gap: 34px;
+
+  @include respond(laptop) {
+    display: flex;
+  }
+}
