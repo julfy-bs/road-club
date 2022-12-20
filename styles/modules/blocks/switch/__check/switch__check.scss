@@ -1,11 +1,11 @@
 .switch__check {
+  background-color: var(--swith-dot-color);
+  border-radius: 9999px;
+  box-shadow: 0 0 0 var(--color-white);
+  height: 20px;
+  left: 2px;
   position: absolute;
   top: 2px;
-  left: 2px;
+  transition: background-color 0.25s ease, transform 0.25s ease, opacity 0.25s ease;
   width: 20px;
-  height: 20px;
-  background-color: var(--swith-dot-color);
-  box-shadow: 0 0 0 var(--color-white);
-  border-radius: 9999px;
-  transition: background-color 0.25s, transform 0.25s;
 }

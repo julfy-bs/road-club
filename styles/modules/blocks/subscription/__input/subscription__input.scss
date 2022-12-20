@@ -4,11 +4,34 @@
   color: var(--theme-title-color);
   min-height: 50px;
   padding: 11px 20px;
-  transition: border-color 0.25s ease, color 0.25s ease;
+  transition: border-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 
   &::placeholder {
     color: var(--theme-title-color);
     opacity: 0.7;
     transition: color 0.25s ease;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--theme-border-hover-color);
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+
+  &:focus + .subscription__button {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover + .subscription__button {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }

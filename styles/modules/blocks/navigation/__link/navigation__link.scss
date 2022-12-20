@@ -1,9 +1,5 @@
 .navigation__link {
-  color: var(--theme-title-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.29;
-  transition: color 0.25s, opacity 0.25s;
+  transition: opacity 0.25s ease;
 
   &:hover {
     opacity: 0.75;

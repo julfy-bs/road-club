@@ -1,0 +1,9 @@
+@import '../../../../helpers/mixins/media';
+
+.appearance_position_burger {
+  display: flex;
+
+  @include respond(tablet) {
+    display: none;
+  }
+}

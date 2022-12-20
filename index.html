@@ -14,7 +14,7 @@
     <header class="page__header header">
       <div class="header__wrapper">
         <nav>
-          <ul class="page__list navigation">
+          <ul class="page__list navigation navigation_position_header">
             <li class="navigation__item">
               <a class="page__link navigation__link" href="#surface">Покрытия и градиенты</a>
             </li>
@@ -39,14 +39,50 @@
       <section class="section" id="surface"></section>
       <section class="section" id="bicycle"></section>
       <section class="section" id="workout"></section>
+      <div class="popup popup_role_burger">
+        <button aria-label="Закрыть меню" class="page__button popup__close" type="button"></button>
+        <div class="popup__wrapper">
+          <nav>
+            <ul class="page__list navigation navigation_position_burger">
+              <li class="navigation__item">
+                <a class="page__link navigation__link" href="#surface">Покрытия и градиенты</a>
+              </li>
+              <li class="navigation__item">
+                <a class="page__link navigation__link" href="#bicycle">Велосипеды</a>
+              </li>
+              <li class="navigation__item">
+                <a class="page__link navigation__link" href="#workout">Тренировки</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="appearance appearance_position_burger">
+            <span class="appearance__icon appearance__icon_mode_light"></span>
+            <button
+              aria-label="Переключатель режима отображения"
+              class="page__button switch"
+              role="switch"
+              type="button"
+            >
+              <span class="switch__check"></span>
+            </button>
+            <span class="appearance__icon appearance__icon_mode_dark"></span>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="page__footer footer">
       <div class="footer__wrapper">
         <div class="subscription">
           <h3 class="page__title subscription__title">Подпишитесь на рассылку&nbsp;—</h3>
           <form action="#" class="subscription__form">
-            <label>
-              <input class="page__input subscription__input" placeholder="Ваш e-mail" type="text" />
+            <label class="subscription__label">
+              <input
+                class="page__input subscription__input"
+                placeholder="Ваш e-mail"
+                required
+                type="email"
+              />
+              <button class="page__button subscription__button">ok</button>
             </label>
           </form>
         </div>

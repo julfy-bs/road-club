@@ -53,6 +53,10 @@ $color-silver-chalice: #adadad;
   /* switch */
   --swith-dot-color: #{$color-green-crayola};
 
+  /* z-index */
+  --z-index-banner: 10;
+  --z-index-popup: 10000;
+
   @include respond(tablet) {
     --page-padding-side: 12px;
   }
@@ -70,6 +74,7 @@ $color-silver-chalice: #adadad;
   --theme-text-primary-color: #{$color-black-raisin};
   --theme-text-secondary-color: #{$color-american-silver};
   --theme-border-color: #{$color-chinese-silver-50};
+  --theme-border-hover-color: #{$color-chinese-silver};
   --theme-switch-background: #{$color-white};
   --theme--switch-icon-color: #{$color-american-silver};
 }
@@ -81,6 +86,7 @@ $color-silver-chalice: #adadad;
   --theme-text-primary-color: #{$color-platinum-230};
   --theme-text-secondary-color: #{$color-gray-davy-56};
   --theme-border-color: #{$color-gray-50};
+  --theme-border-hover-color: #{$color-gray};
   --theme-switch-background: #{$color-gray-davy-54};
   --theme--switch-icon-color: #{$color-granite-gray};
 }
