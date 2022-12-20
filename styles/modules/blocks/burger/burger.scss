@@ -7,7 +7,7 @@
   width: 40px;
   padding: 10px 6px;
 
-  @include respond(laptop) {
+  @include respond(tablet) {
     display: none;
   }
 

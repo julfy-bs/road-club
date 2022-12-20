@@ -1,0 +1,14 @@
+.subscription__input {
+  border: 1px solid var(--theme-border-color);
+  border-radius: 4px;
+  color: var(--theme-title-color);
+  min-height: 50px;
+  padding: 11px 20px;
+  transition: border-color 0.25s ease, color 0.25s ease;
+
+  &::placeholder {
+    color: var(--theme-title-color);
+    opacity: 0.7;
+    transition: color 0.25s ease;
+  }
+}
