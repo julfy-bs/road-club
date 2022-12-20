@@ -4,7 +4,7 @@
   /* general colors */
   --color-white: #fff;
   /* font */
-  --font: "Inter", Arial, sans-serif;
+  --font: 'Inter', Arial, sans-serif;
   /* page */
   --page-min-width: 320px;
   --page-content-width: 1200px;
@@ -317,6 +317,17 @@
   display: flex;
   flex-direction: column;
 }
+.subscription__form:focus-within .subscription__input {
+  border-color: var(--theme-border-hover-color);
+  outline: none;
+}
+.subscription__form:focus-within .subscription__button {
+  opacity: 1;
+  visibility: visible;
+}
+.subscription__form:focus-within .subscription__input::placeholder {
+  color: transparent;
+}
 
 .subscription__label {
   position: relative;
@@ -335,21 +346,6 @@
   opacity: 0.7;
   transition: color 0.25s ease;
 }
-.subscription__input:focus {
-  outline: none;
-  border-color: var(--theme-border-hover-color);
-}
-.subscription__input:focus::placeholder {
-  color: transparent;
-}
-.subscription__input:focus + .subscription__button {
-  opacity: 1;
-  visibility: visible;
-}
-.subscription__input:hover + .subscription__button {
-  opacity: 1;
-  visibility: visible;
-}
 .subscription__input:hover {
   cursor: pointer;
 }
@@ -366,10 +362,6 @@
   transition: visibility 0.25s ease, opacity 0.25s ease;
   visibility: hidden;
 }
-.subscription__button:hover, .subscription__button:focus {
-  opacity: 1;
-  visibility: visible;
-}
 
 /* disclaimer */
 .disclaimer {
@@ -384,8 +376,8 @@
   width: 32px;
   height: 32px;
   background-color: var(--theme-title-color);
-  -webkit-mask-image: url("../images/logo.svg");
-  mask-image: url("../images/logo.svg");
+  -webkit-mask-image: url('../images/logo.svg');
+  mask-image: url('../images/logo.svg');
   transition: background-color 0.5s ease;
 }
 @media screen and (min-width: 481px) {
@@ -427,15 +419,15 @@
 .appearance__icon_mode_light {
   width: 28px;
   height: 28px;
-  -webkit-mask-image: url("../images/sun.svg");
-  mask-image: url("../images/sun.svg");
+  -webkit-mask-image: url('../images/sun.svg');
+  mask-image: url('../images/sun.svg');
 }
 
 .appearance__icon_mode_dark {
   width: 20px;
   height: 20px;
-  -webkit-mask-image: url("../images/moon.svg");
-  mask-image: url("../images/moon.svg");
+  -webkit-mask-image: url('../images/moon.svg');
+  mask-image: url('../images/moon.svg');
 }
 
 /* switch */
@@ -504,8 +496,8 @@
 .popup__close {
   background-color: var(--theme-title-color);
   height: 33px;
-  -webkit-mask-image: url("../images/close.svg");
-  mask-image: url("../images/close.svg");
+  -webkit-mask-image: url('../images/close.svg');
+  mask-image: url('../images/close.svg');
   position: absolute;
   right: 20px;
   top: 27px;

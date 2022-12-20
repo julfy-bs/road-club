@@ -3,6 +3,9 @@ const page = document.querySelector('.page');
 const buttonOpenBurger = document.querySelector('.burger');
 const popupBurger = document.querySelector('.popup_role_burger');
 const buttonCloseBurger = popupBurger.querySelector('.popup__close');
+const subscriptionForm = document.querySelector('.subscription__form');
+const subscriptionInput = subscriptionForm.querySelector('.subscription__input');
+const subscriptionButton = subscriptionForm.querySelector('.subscription__button');
 
 let userTheme = localStorage.getItem('theme') || '';
 let isUserPrefersDarkMode = false;
@@ -50,19 +53,23 @@ const findAppearance = () => {
     setPresetTheme(userTheme);
   }
 };
-
+const openPopup = (popup) => popup.classList.add('popup_active');
+const closePopup = (popup) => popup.classList.remove('popup_active');
 document.addEventListener('DOMContentLoaded', () => {
   findAppearance();
 });
-
 themeButtonArray.forEach((item) =>
   item.addEventListener('click', () => {
     toggleTheme();
   })
 );
-
-const openPopup = (popup) => popup.classList.add('popup_active');
-const closePopup = (popup) => popup.classList.remove('popup_active');
-
 buttonOpenBurger.addEventListener('click', () => openPopup(popupBurger));
 buttonCloseBurger.addEventListener('click', () => closePopup(popupBurger));
+subscriptionForm.addEventListener('submit', () => {
+  subscriptionInput.value = 'Круто!';
+  subscriptionInput.blur();
+  subscriptionButton.blur();
+  setTimeout(() => {
+    subscriptionInput.value = '';
+  }, 5000);
+});

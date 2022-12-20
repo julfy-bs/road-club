@@ -9,10 +9,4 @@
   top: 11px;
   transition: visibility 0.25s ease, opacity 0.25s ease;
   visibility: hidden;
-
-  &:hover,
-  &:focus {
-    opacity: 1;
-    visibility: visible;
-  }
 }
