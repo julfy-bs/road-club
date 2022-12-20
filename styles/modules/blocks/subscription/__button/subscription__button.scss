@@ -1,0 +1,17 @@
+.subscription__button {
+  align-items: center;
+  color: var(--theme-title-color);
+  display: flex;
+  height: 28px;
+  opacity: 0;
+  position: absolute;
+  right: 22px;
+  top: 11px;
+  transition: visibility .25s ease, opacity .25s ease;
+  visibility: hidden;
+
+  &:hover, &:focus {
+    opacity: 1;
+    visibility: visible;
+  }
+}

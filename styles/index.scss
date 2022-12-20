@@ -20,7 +20,9 @@
 
 /* navigation */
 @import './modules/blocks/navigation/navigation';
-@import './modules/blocks/navigation/__item/navigation__item';
+@import './modules/blocks/navigation/_position/navigation_position_header';
+@import './modules/blocks/navigation/_position/navigation_position_burger';
+@import 'modules/blocks/navigation/__item/navigation__item';
 @import './modules/blocks/navigation/__link/navigation__link';
 
 /* burger */
@@ -40,7 +42,9 @@
 @import './modules/blocks/subscription/subscription';
 @import 'modules/blocks/subscription/__title/subscription__title';
 @import 'modules/blocks/subscription/__form/subscription__form';
+@import 'modules/blocks/subscription/__label/subscription__label';
 @import 'modules/blocks/subscription/__input/subscription__input';
+@import 'modules/blocks/subscription/__button/subscription__button';
 
 /* disclaimer */
 @import 'modules/blocks/disclaimer/disclaimer';
@@ -50,6 +54,7 @@
 
 /* appearance */
 @import './modules/blocks/appearance/appearance';
+@import './modules/blocks/appearance/_position/appearance_position_burger';
 @import './modules/blocks/appearance/_position/appearance_position_footer';
 @import './modules/blocks/appearance/__icon/appearance__icon';
 @import './modules/blocks/appearance/__icon/_mode/appearance__icon_mode_light';
@@ -59,3 +64,9 @@
 @import './modules/blocks/switch/switch';
 @import './modules/blocks/switch/_active/switch_active';
 @import './modules/blocks/switch/__check/switch__check';
+
+/* popup */
+@import './modules/blocks/popup/popup';
+@import './modules/blocks/popup/_active/popup_active';
+@import './modules/blocks/popup/__wrapper/popup__wrapper';
+@import './modules/blocks/popup/__close/popup__close';

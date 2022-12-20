@@ -1,10 +1,4 @@
-@import '../../../helpers/mixins/media';
-
 .navigation {
-  display: none;
+  display: flex;
   gap: 34px;
-
-  @include respond(tablet) {
-    display: flex;
-  }
 }
