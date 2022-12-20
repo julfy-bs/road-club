@@ -12,25 +12,6 @@
     transition: color 0.25s ease;
   }
 
-  &:focus {
-    outline: none;
-    border-color: var(--theme-border-hover-color);
-  }
-
-  &:focus::placeholder {
-    color: transparent;
-  }
-
-  &:focus + .subscription__button {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  &:hover + .subscription__button {
-    opacity: 1;
-    visibility: visible;
-  }
-
   &:hover {
     cursor: pointer;
   }
