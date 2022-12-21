@@ -5,10 +5,14 @@
   background-color: var(--theme-background-footer);
   display: flex;
   justify-content: center;
-  padding: 60px var(--page-padding-side) 16px;
+  padding: 0 var(--page-padding-side) 0;
   color: var(--theme-title-color);
 
   @include respond(tablet) {
-    padding: 60px var(--page-padding-side);
+    padding-bottom: 0;
+  }
+
+  @include respond(fullhd) {
+    padding: 0;
   }
 }

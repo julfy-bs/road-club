@@ -1,0 +1,17 @@
+@import '../../../../helpers/mixins/media';
+
+.slide__image {
+  max-height: 160px;
+  max-width: 234px;
+  width: 100%;
+
+  @include respond(laptop) {
+    max-height: 240px;
+    max-width: 320px;
+  }
+
+  @include respond(fullhd) {
+    max-height: 260px;
+    max-width: 340px;
+  }
+}

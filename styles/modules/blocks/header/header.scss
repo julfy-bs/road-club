@@ -1,7 +1,13 @@
+@import '../../../helpers/mixins/media';
+
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: var(--header-height);
   padding: 0 var(--page-padding-side);
+
+  @include respond(fullhd) {
+    padding: 0;
+  }
 }

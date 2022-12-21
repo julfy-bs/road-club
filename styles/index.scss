@@ -22,16 +22,36 @@
 @import './modules/blocks/navigation/navigation';
 @import './modules/blocks/navigation/_position/navigation_position_header';
 @import './modules/blocks/navigation/_position/navigation_position_burger';
-@import 'modules/blocks/navigation/__item/navigation__item';
+@import './modules/blocks/navigation/__item/navigation__item';
 @import './modules/blocks/navigation/__link/navigation__link';
 
 /* burger */
 @import './modules/blocks/burger/burger';
 @import './modules/blocks/burger/__container/burger__container';
 @import './modules/blocks/burger/__line/burger__line';
-@import 'modules/blocks/burger/__line/_position/burger__line_position_top';
+@import './modules/blocks/burger/__line/_position/burger__line_position_top';
 @import './modules/blocks/burger/__line/_position/burger__line_position_middle';
-@import 'modules/blocks/burger/__line/_position/burger__line_position_bottom';
+@import './modules/blocks/burger/__line/_position/burger__line_position_bottom';
+
+/* section */
+@import './modules/blocks/section/section';
+@import './modules/blocks/section/__title/section__title';
+
+/* hero */
+@import './modules/blocks/hero/hero';
+@import './modules/blocks/hero/__container/hero__container';
+@import './modules/blocks/hero/__wrapper/hero__wrapper';
+@import './modules/blocks/hero/__description/hero__description';
+@import './modules/blocks/hero/__model/hero__model';
+
+/* button */
+@import './modules/blocks/button/button';
+@import './modules/blocks/button/__gradient/button__gradient';
+
+/* slide */
+@import './modules/blocks/slide/slide';
+@import './modules/blocks/slide/__bike/slide__bike';
+@import './modules/blocks/slide/__image/slide__image';
 
 /* footer */
 @import './modules/blocks/footer/footer';
@@ -40,17 +60,17 @@
 
 /* subscription */
 @import './modules/blocks/subscription/subscription';
-@import 'modules/blocks/subscription/__title/subscription__title';
-@import 'modules/blocks/subscription/__form/subscription__form';
-@import 'modules/blocks/subscription/__label/subscription__label';
-@import 'modules/blocks/subscription/__input/subscription__input';
-@import 'modules/blocks/subscription/__button/subscription__button';
+@import './modules/blocks/subscription/__title/subscription__title';
+@import './modules/blocks/subscription/__form/subscription__form';
+@import './modules/blocks/subscription/__label/subscription__label';
+@import './modules/blocks/subscription/__input/subscription__input';
+@import './modules/blocks/subscription/__button/subscription__button';
 
 /* disclaimer */
-@import 'modules/blocks/disclaimer/disclaimer';
+@import './modules/blocks/disclaimer/disclaimer';
 
 /* logo */
-@import 'modules/blocks/logo/logo';
+@import './modules/blocks/logo/logo';
 
 /* appearance */
 @import './modules/blocks/appearance/appearance';

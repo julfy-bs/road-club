@@ -1,0 +1,19 @@
+@import '../../../../helpers/mixins/media';
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: var(--page-content-width);
+
+  @include respond(laptop) {
+    gap: 50px;
+    max-width: 300px;
+  }
+
+  @include respond(fullhd) {
+    gap: 50px;
+    max-width: 460px;
+  }
+}
