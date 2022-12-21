@@ -4,10 +4,9 @@
   width: 32px;
   height: 32px;
   background-color: var(--theme-title-color);
-  -webkit-mask-image: url('../../../../images/icons/logo.svg');
-  mask-image: url('../../../../images/icons/logo.svg');
+  -webkit-mask-image: url('/images/icons/logo.svg');
+  mask-image: url('/images/icons/logo.svg');
   transition: background-color 0.5s ease;
-
   @include respond(tablet) {
     display: none;
   }

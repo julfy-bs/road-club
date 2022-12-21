@@ -34,7 +34,6 @@
 }
 
 :root .page_theme_light {
-  /* theme */
   --theme-background: #f4f4f4;
   --theme-background-footer: #ebebeb;
   --theme-title-color: #151515;
@@ -424,7 +423,7 @@
 
 /* slide */
 .slide {
-  background: transparent url('../images/content/hero-background.jpg') no-repeat center/cover;
+  background: transparent url('/images/content/hero-background.jpg') no-repeat center/cover;
   box-sizing: border-box;
   display: flex;
   height: 100%;
@@ -623,8 +622,8 @@
   width: 32px;
   height: 32px;
   background-color: var(--theme-title-color);
-  -webkit-mask-image: url('../images/icons/logo.svg');
-  mask-image: url('../images/icons/logo.svg');
+  -webkit-mask-image: url('/images/icons/logo.svg');
+  mask-image: url('/images/icons/logo.svg');
   transition: background-color 0.5s ease;
 }
 @media screen and (min-width: 481px) {
@@ -666,15 +665,15 @@
 .appearance__icon_mode_light {
   width: 28px;
   height: 28px;
-  -webkit-mask-image: url('../images/icons/sun.svg');
-  mask-image: url('../images/icons/sun.svg');
+  -webkit-mask-image: url('/images/icons/sun.svg');
+  mask-image: url('/images/icons/sun.svg');
 }
 
 .appearance__icon_mode_dark {
   width: 20px;
   height: 20px;
-  -webkit-mask-image: url('../images/icons/moon.svg');
-  mask-image: url('../images/icons/moon.svg');
+  -webkit-mask-image: url('/images/icons/moon.svg');
+  mask-image: url('/images/icons/moon.svg');
 }
 
 /* switch */
@@ -743,8 +742,8 @@
 .popup__close {
   background-color: var(--theme-title-color);
   height: 33px;
-  -webkit-mask-image: url('../images/icons/close.svg');
-  mask-image: url('../images/icons/close.svg');
+  -webkit-mask-image: url('/images/icons/close.svg');
+  mask-image: url('/images/icons/close.svg');
   position: absolute;
   right: 20px;
   top: 27px;

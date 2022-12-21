@@ -1,7 +1,8 @@
 @import '../../../helpers/mixins/media';
 
 .slide {
-  background: transparent url('../../../../images/content/hero-background.jpg') no-repeat center / cover;
+  background: transparent url('/images/content/hero-background.jpg') no-repeat center /
+    cover;
   box-sizing: border-box;
   display: flex;
   height: 100%;
