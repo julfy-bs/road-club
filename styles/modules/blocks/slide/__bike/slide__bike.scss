@@ -1,0 +1,30 @@
+@import '../../../../helpers/mixins/media';
+
+.slide__bike {
+  align-items: center;
+  background-color: var(--hero-slide-color);
+  border-radius: 20px;
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+  box-sizing: border-box;
+  display: flex;
+  height: min-content;
+  justify-content: center;
+  min-width: 234px;
+  padding: 11px 27px;
+  position: sticky;
+  top: 45vh;
+  transform: translateX(-30px);
+
+  @include respond(laptop) {
+    transform: translateX(-100px);
+  }
+
+  @include respond(desktop) {
+    transform: translateX(-200px);
+  }
+
+  @include respond(fullhd) {
+    min-width: 440px;
+    padding: 20px 50px;
+  }
+}

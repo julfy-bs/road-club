@@ -1,0 +1,28 @@
+@import '../../../../helpers/mixins/media';
+
+.hero__model {
+  display: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--theme-title-color);
+
+  align-items: center;
+  gap: 30px;
+
+  &:after {
+    content: ' ';
+    min-width: 132px;
+    height: 2px;
+    background-color: var(--theme-border-color);
+  }
+
+  @include respond(laptop) {
+    display: flex;
+    padding-top: 110px;
+  }
+
+  @include respond(desktop) {
+    padding-top: 90px;
+  }
+}

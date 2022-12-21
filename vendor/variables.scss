@@ -37,6 +37,8 @@ $color-silver-chalice: #adadad;
 :root {
   /* general colors */
   --color-white: #{$color-white};
+  --color-green: #{$color-green-crayola};
+  --color-green-dark: #{$color-illuminating-emerald};
 
   /* font */
   --font: 'Inter', Arial, sans-serif;
@@ -49,6 +51,9 @@ $color-silver-chalice: #adadad;
 
   /* header */
   --header-height: 74px;
+
+  /* hero-slide */
+  --hero-slide-color: #{$color-cultured};
 
   /* switch */
   --swith-dot-color: #{$color-green-crayola};
@@ -77,6 +82,7 @@ $color-silver-chalice: #adadad;
   --theme-border-hover-color: #{$color-chinese-silver};
   --theme-switch-background: #{$color-white};
   --theme--switch-icon-color: #{$color-american-silver};
+  --theme-line-color: #{$color-gray-light};
 }
 
 :root .page_theme_dark {
@@ -89,4 +95,5 @@ $color-silver-chalice: #adadad;
   --theme-border-hover-color: #{$color-gray};
   --theme-switch-background: #{$color-gray-davy-54};
   --theme--switch-icon-color: #{$color-granite-gray};
+  --theme-line-color: #{$color-dark-silver-112};
 }
