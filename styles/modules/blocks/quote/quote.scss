@@ -1,0 +1,9 @@
+@import '../../../helpers/mixins/media';
+
+.quote {
+  padding: 40px 0;
+
+  @include respond(desktop) {
+    padding: 120px 0 60px;
+  }
+}

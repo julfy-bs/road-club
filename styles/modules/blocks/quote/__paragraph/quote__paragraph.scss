@@ -1,0 +1,15 @@
+@import '../../../../helpers/mixins/media';
+
+.quote__paragraph {
+  color: var(--theme-title-color);
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  line-height: 1.26;
+  transition: color .25s ease;
+
+  @include respond(desktop) {
+    font-size: 34px;
+    line-height: 1.29;
+  }
+}

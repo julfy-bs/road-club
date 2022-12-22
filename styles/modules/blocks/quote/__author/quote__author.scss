@@ -1,0 +1,14 @@
+@import '../../../../helpers/mixins/media';
+
+.quote__author {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.57;
+  color: var(--theme-title-color);
+  transition: color .25s ease;
+
+  @include respond(desktop) {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}

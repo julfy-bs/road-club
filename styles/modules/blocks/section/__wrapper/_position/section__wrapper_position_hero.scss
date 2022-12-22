@@ -1,0 +1,14 @@
+@import '../../../../../helpers/mixins/media';
+
+.section__wrapper_position_hero {
+  display: flex;
+  flex-direction: column;
+
+  @include respond(laptop) {
+    max-width: 300px;
+  }
+
+  @include respond(fullhd) {
+    max-width: 460px;
+  }
+}

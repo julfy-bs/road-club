@@ -1,0 +1,12 @@
+@import '../../../../helpers/mixins/media';
+
+.quote__image {
+  height: auto;
+  min-height: 204px;
+  min-width: 284px;
+  width: 100%;
+
+  @include respond(laptop) {
+    grid-row: 1 / 3;
+  }
+}
