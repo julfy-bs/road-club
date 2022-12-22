@@ -1,6 +1,8 @@
 @import '../node_modules/normalize.css/normalize.css';
 @import '../vendor/fonts/fonts.css';
 @import '../vendor/variables';
+/* smooth-scroll */
+@import './modules/blocks/smooth-scroll/smooth-scroll';
 /* page */
 @import './modules/blocks/page/page.scss';
 @import './modules/blocks/page/__header/page__header';
@@ -13,6 +15,8 @@
 @import './modules/blocks/page/__paragraph/page__paragraph';
 @import './modules/blocks/page/__title/page__title';
 @import './modules/blocks/page/__input/page__input';
+@import './modules/blocks/page/__figure/page__figure';
+@import './modules/blocks/page/__blockquote/page__blockquote';
 
 /* header */
 @import './modules/blocks/header/header';
@@ -36,11 +40,14 @@
 /* section */
 @import './modules/blocks/section/section';
 @import './modules/blocks/section/__title/section__title';
+@import './modules/blocks/section/__wrapper/section__wrapper';
+@import './modules/blocks/section/__wrapper/_type/section__wrapper_type_lined';
+@import './modules/blocks/section/__wrapper/_position/section__wrapper_position_hero';
+@import './modules/blocks/section/__wrapper/_position/section__wrapper_position_quote';
 
 /* hero */
 @import './modules/blocks/hero/hero';
 @import './modules/blocks/hero/__container/hero__container';
-@import './modules/blocks/hero/__wrapper/hero__wrapper';
 @import './modules/blocks/hero/__description/hero__description';
 @import './modules/blocks/hero/__model/hero__model';
 
@@ -52,6 +59,15 @@
 @import './modules/blocks/slide/slide';
 @import './modules/blocks/slide/__bike/slide__bike';
 @import './modules/blocks/slide/__image/slide__image';
+
+/* quote */
+@import './modules/blocks/quote/quote';
+@import './modules/blocks/quote/__image/quote__image';
+@import './modules/blocks/quote/__body/quote__body';
+@import './modules/blocks/quote/__paragraph/quote__paragraph';
+@import './modules/blocks/quote/__figcaption/quote__figcaption';
+@import './modules/blocks/quote/__author/quote__author';
+@import './modules/blocks/quote/__occupation/quote__occupation';
 
 /* footer */
 @import './modules/blocks/footer/footer';

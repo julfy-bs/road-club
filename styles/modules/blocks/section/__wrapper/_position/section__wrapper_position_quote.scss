@@ -1,0 +1,14 @@
+@import '../../../../../helpers/mixins/media';
+
+.section__wrapper_position_quote {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include respond(laptop) {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+
+  @include respond(desktop) {
+    column-gap: 80px;
+  }
+}

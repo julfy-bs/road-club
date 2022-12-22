@@ -1,0 +1,11 @@
+@import '../../../../../helpers/mixins/media';
+
+.section__wrapper_type_lined {
+  border-top: 1px solid var(--theme-border-color);
+  box-sizing: border-box;
+  padding: 20px 0 0;
+
+  @include respond(laptop) {
+    border: none;
+  }
+}
