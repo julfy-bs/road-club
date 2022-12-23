@@ -1,0 +1,19 @@
+@import '../../../helpers/mixins/media';
+
+.surface {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  padding: 40px 0;
+  position: relative;
+  width: 100%;
+
+  @include respond(laptop) {
+    align-items: flex-end;
+    padding: 60px 0;
+  }
+
+  @include respond(huge) {
+    align-items: center;
+  }
+}

@@ -1,20 +1,19 @@
 @import '../../../../helpers/mixins/media';
 
 .hero__model {
-  display: none;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1;
-  color: var(--theme-title-color);
-
   align-items: center;
+  color: var(--theme-title-color);
+  display: none;
+  font-size: 18px;
+  font-weight: 400;
   gap: 30px;
+  line-height: 1;
 
   &:after {
-    content: ' ';
-    min-width: 132px;
-    height: 2px;
     background-color: var(--theme-border-color);
+    content: ' ';
+    height: 2px;
+    min-width: 132px;
   }
 
   @include respond(laptop) {

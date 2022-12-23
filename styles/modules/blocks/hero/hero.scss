@@ -1,17 +1,16 @@
 @import '../../../helpers/mixins/media';
 
 .hero {
-  box-sizing: border-box;
-  display: flex;
   align-items: center;
+  box-sizing: border-box;
   padding: 40px 0;
   position: relative;
   width: 100%;
 
   @include respond(laptop) {
-    max-width: var(--page-max-width);
     align-items: flex-start;
-    padding: 80px 0;
+    max-width: var(--page-max-width);
     min-height: 856px;
+    padding: 80px 0;
   }
 }

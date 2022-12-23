@@ -1,0 +1,10 @@
+@import '../../../../helpers/mixins/media';
+
+.surface__image-wrapper {
+  display: block;
+  position: relative;
+
+  @include respond(laptop) {
+    display: none;
+  }
+}

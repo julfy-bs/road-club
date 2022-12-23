@@ -7,5 +7,6 @@
 
   @include respond(laptop) {
     border: none;
+    padding: 0;
   }
 }

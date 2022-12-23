@@ -1,0 +1,12 @@
+@import '../../../../../helpers/mixins/media';
+
+.page__container_padding_left {
+
+  @include respond(laptop) {
+    padding: 0 0 0 var(--page-padding-tablet-side);
+  }
+
+  @include respond(fullhd) {
+    padding: 0 0 0 var(--page-padding-desktop-side);
+  }
+}

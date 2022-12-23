@@ -1,0 +1,7 @@
+.surface__slider-item_role_content {
+  flex: 0 0 100%;
+  opacity: 0;
+  transition: opacity .5s cubic-bezier(0.4, 0, 0.2, 1),
+  visibility .5s cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: hidden;
+}

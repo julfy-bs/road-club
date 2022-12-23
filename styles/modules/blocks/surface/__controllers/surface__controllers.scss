@@ -1,0 +1,14 @@
+@import '../../../../helpers/mixins/media';
+
+.surface__controllers {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  right: 0;
+  top: 47px;
+
+  @include respond(laptop) {
+    position: static;
+    gap: 20px;
+  }
+}
