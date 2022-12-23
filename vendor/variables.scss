@@ -45,9 +45,10 @@ $color-silver-chalice: #adadad;
 
   /* page */
   --page-min-width: 320px;
-  --page-content-width: 1200px;
   --page-max-width: 1440px;
-  --page-padding-side: 18px;
+  --page-padding-mobile-side: 18px;
+  --page-padding-tablet-side: 36px;
+  --page-padding-desktop-side: 120px;
 
   /* header */
   --header-height: 74px;
@@ -82,6 +83,7 @@ $color-silver-chalice: #adadad;
   --theme-switch-background: #{$color-white};
   --theme--switch-icon-color: #{$color-american-silver};
   --theme-line-color: #{$color-gray-light};
+  --theme-slider-controllers-color: #{$color-gray-bright};
 }
 
 :root .page_theme_dark {
@@ -95,4 +97,5 @@ $color-silver-chalice: #adadad;
   --theme-switch-background: #{$color-gray-davy-54};
   --theme--switch-icon-color: #{$color-granite-gray};
   --theme-line-color: #{$color-dark-silver-112};
+  --theme-slider-controllers-color: #{$color-arsenic};
 }

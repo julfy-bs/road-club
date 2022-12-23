@@ -1,12 +1,12 @@
 @import '../../../helpers/mixins/media';
 
 .logo {
-  width: 32px;
-  height: 32px;
   background-color: var(--theme-title-color);
+  height: 32px;
   -webkit-mask-image: url('/images/icons/logo.svg');
   mask-image: url('/images/icons/logo.svg');
   transition: background-color 0.5s ease;
+  width: 32px;
   @include respond(tablet) {
     display: none;
   }

@@ -3,7 +3,6 @@
 .section__wrapper {
   gap: 40px;
   width: 100%;
-  max-width: var(--page-content-width);
 
   @include respond(laptop) {
     gap: 50px;

@@ -5,14 +5,15 @@
   background-color: var(--theme-background-footer);
   display: flex;
   justify-content: center;
-  padding: 0 var(--page-padding-side) 0;
+  padding: 80px 0 16px;
   color: var(--theme-title-color);
+  transition: background-color 0.5s ease, color .25s ease;
 
   @include respond(tablet) {
-    padding-bottom: 0;
+    padding-bottom: 40px;
   }
 
-  @include respond(fullhd) {
-    padding: 0;
+  @include respond(laptop) {
+    padding-bottom: 60px;
   }
 }

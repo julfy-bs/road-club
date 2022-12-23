@@ -1,4 +1,10 @@
 @mixin respond($breakpoint) {
+  @if $breakpoint==huge {
+    @media screen and (min-width: 1440px) {
+      @content;
+    }
+  }
+
   @if $breakpoint==fullhd {
     @media screen and (min-width: 1281px) {
       @content;

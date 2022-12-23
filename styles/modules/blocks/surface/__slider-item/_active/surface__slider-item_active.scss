@@ -1,0 +1,9 @@
+.surface__slider-item_active {
+  visibility: visible;
+  opacity: 1;
+
+  & .surface__banner {
+    visibility: visible;
+    opacity: 1;
+  }
+}
