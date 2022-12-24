@@ -13,9 +13,21 @@ const slidesContentArray = sliderContent.querySelectorAll('.surface__slider-item
 const slidesImageArray = sliderImage.querySelectorAll('.surface__slider-item');
 const sliderBtnPrev = slider.querySelector('.surface__button_direction_prev');
 const sliderBtnNext = slider.querySelector('.surface__button_direction_next');
+const bicycles = document.querySelector('.bicycles');
+const bicyclesWrapper = bicycles.querySelector('.section__wrapper_position_bicycles');
+const bicyclesSelect = bicycles.querySelector('.bicycles__select');
+const bicyclesCards = bicycles.querySelectorAll('.bicycles__card');
+const bicyclesItemsArray = bicycles.querySelectorAll('.bicycles__feed-item');
+const bicyclesHighwayArray = bicycles.querySelectorAll('#highway');
+const bicyclesGravelArray = bicycles.querySelectorAll('#gravel');
+const bicyclesTtArray = bicycles.querySelectorAll('#tt');
+const paginationTemplate = document.querySelector('#pagination').content.querySelector('.bicycles__pagination');
+const mediaQueryPhone = window.matchMedia('(max-width: 768px)');
 let userTheme = localStorage.getItem('theme') || '';
 let isUserPrefersDarkMode = false;
 let activeSlide = 0;
+let paginationActive = 0;
+let bicyclesIndex = 'highway';
 const setTheme = (theme) => {
   localStorage.setItem('theme', theme);
   userTheme = theme;
@@ -93,8 +105,41 @@ const slidePrev = (amount, position = 0) => {
   }
   openSlide(activeSlide);
 };
+const changeBicyclesIndex = (index) => {
+  bicyclesIndex = index;
+};
+const setPaginationActiveItem = (element) => {
+
+}
+const changeBicyclesActiveClass = (array, index, parent) => {
+  if (parent === true) {
+    array.forEach(item => {
+      if (item.id === index) {
+        item.classList.add('bicycles__feed-item_active');
+      } else {
+        item.classList.remove('bicycles__feed-item_active');
+      }
+    });
+  } else {
+    array.forEach(item => {
+      if (item.id === index) {
+        const bicyclesArray = item.querySelectorAll('.bicycles__item');
+        bicyclesArray[paginationActive].classList.add('bicycles__item_active');
+      } else {
+        item.classList.remove('bicycles__item_active');
+      }
+    })
+  }
+};
+const changeBicyclesActiveSlide = () => {
+
+};
 document.addEventListener('DOMContentLoaded', () => {
   findAppearance();
+  changeBicyclesActiveClass(bicyclesItemsArray, bicyclesIndex, true);
+  if (mediaQueryPhone.matches) {
+    changeBicyclesActiveClass(bicyclesItemsArray, bicyclesIndex, false);
+  }
 });
 themeButtonArray.forEach((item) => {
   item.addEventListener('click', () => {
@@ -103,7 +148,8 @@ themeButtonArray.forEach((item) => {
 });
 buttonOpenBurger.addEventListener('click', () => openPopup(popupBurger));
 buttonCloseBurger.addEventListener('click', () => closePopup(popupBurger));
-subscriptionForm.addEventListener('submit', () => {
+subscriptionForm.addEventListener('submit', (e) => {
+  e.preventDefault();
   subscriptionInput.value = 'Круто!';
   subscriptionInput.blur();
   subscriptionButton.blur();
@@ -113,3 +159,7 @@ subscriptionForm.addEventListener('submit', () => {
 });
 sliderBtnPrev.addEventListener('click', () => slidePrev(slidesContentArray.length, activeSlide));
 sliderBtnNext.addEventListener('click', () => slideNext(slidesContentArray.length, activeSlide));
+bicyclesSelect.addEventListener('change', (e) => {
+  changeBicyclesIndex(e.target.value);
+  changeBicyclesActiveClass(bicyclesItemsArray, bicyclesIndex);
+});

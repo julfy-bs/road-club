@@ -1,0 +1,10 @@
+@import '../../../../../styles/helpers/mixins/media';
+
+.bicycles__controllers {
+  display: none;
+
+  @include respond(desktop) {
+    display: flex;
+    gap: 40px;
+  }
+}

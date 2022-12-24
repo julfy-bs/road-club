@@ -1,0 +1,17 @@
+@import '../../../../../styles/helpers/mixins/media';
+
+.bicycles__name {
+  color: var(--bicycles-card-name-color);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
+  transition: color .25s ease;
+  text-align: center;
+
+  @include respond(desktop) {
+    text-align: start;
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
