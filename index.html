@@ -234,19 +234,19 @@
                 <li class="bicycles__controllers-item">
                   <button
                     class="page__button bicycles__button bicycles__button_active"
-                    type="button"
                     data-name="highway"
+                    type="button"
                   >
                     Шоссе
                   </button>
                 </li>
                 <li class="bicycles__controllers-item">
-                  <button class="page__button bicycles__button" type="button" data-name="gravel">
+                  <button class="page__button bicycles__button" data-name="gravel" type="button">
                     Грэвел
                   </button>
                 </li>
                 <li class="bicycles__controllers-item">
-                  <button class="page__button bicycles__button" type="button" data-name="tt">
+                  <button class="page__button bicycles__button" data-name="tt" type="button">
                     TT
                   </button>
                 </li>
@@ -437,14 +437,31 @@
           </div>
         </div>
       </section>
-      <section class="section" id="workout">
+      <section class="section workout" id="workout">
         <div class="page__container">
-          <h2 class="page__title section__title">Тренировки</h2>
-          <p class="page__paragraph section__description">
-            Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти
-            тренировки поможет приложение Strava, а также это приложение позволит построить
-            тренировочный план.
-          </p>
+          <div
+            class="section__wrapper section__wrapper_type_lined section__wrapper_position_workout"
+          >
+            <h2 class="page__title section__title workout__title">Тренировки</h2>
+            <img alt="" class="page__image workout__image" src="./images/content/workout.jpg" />
+            <p class="page__paragraph section__description workout__description">
+              Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать
+              эти тренировки поможет приложение Strava, а также это приложение позволит построить
+              тренировочный план.
+            </p>
+            <ul class="page__list workout__links">
+              <li>
+                <a class="page__link workout__link" href="https://www.strava.com" target="_blank"
+                  >Strava</a
+                >
+              </li>
+              <li>
+                <a class="page__link workout__link" href="https://www.komoot.com" target="_blank"
+                  >Komoot</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <div class="popup popup_role_burger">
