@@ -1,7 +1,11 @@
 .bicycles__pagination-item {
-  width: 4px;
-  height: 4px;
+  width: 24px;
+  height: 24px;
   display: inline-flex;
   background-color: var(--bicycles-pagination-item);
   border-radius: 50%;
+  
+  &:hover {
+    cursor: pointer;
+  }
 }

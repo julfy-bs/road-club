@@ -13,18 +13,10 @@
   box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.04);
   height: 100%;
 
-  &:hover {
-    cursor: grab;
-  }
-
   @include respond(desktop) {
     background: transparent;
     box-shadow: none;
     gap: 22px;
     padding: 0;
-
-    &:hover {
-      cursor: pointer;
-    }
   }
 }
