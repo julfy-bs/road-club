@@ -11,8 +11,8 @@
     height: 10px;
     background-color: var(--theme-title-color);
     transform: rotate(-90deg);
-    mask-image: url('../../../../../images/icons/arrow.svg');
-    -webkit-mask-image: url('../../../../../images/icons/arrow.svg');
+    mask-image: url('../images/icons/arrow.svg');
+    -webkit-mask-image: url('../images/icons/arrow.svg');
 
     @include respond(laptop) {
       top: 18px;
