@@ -72,8 +72,8 @@ const openPopup = (popup) => popup.classList.add('popup_active');
 const closePopup = (popup) => popup.classList.remove('popup_active');
 const setSlideActive = (slide) => {
   const activeClass = 'surface__slider-item_active';
-  slidesContentArray.forEach(item => item.classList.remove(activeClass));
-  slidesImageArray.forEach(item => item.classList.remove(activeClass));
+  slidesContentArray.forEach((item) => item.classList.remove(activeClass));
+  slidesImageArray.forEach((item) => item.classList.remove(activeClass));
   slidesContentArray[slide].classList.add(activeClass);
   slidesImageArray[slide].classList.add(activeClass);
 };
@@ -122,7 +122,7 @@ const changeBicyclesActiveArray = (index) => {
 };
 const changeBicyclesActiveClass = (array, index, parent) => {
   if (parent) {
-    array.forEach(item => {
+    array.forEach((item) => {
       if (item.id === index) {
         item.classList.add('bicycles__feed-item_active');
       } else {
@@ -140,17 +140,21 @@ const changeBicyclesActiveClass = (array, index, parent) => {
   }
 };
 const setInitialPaginationActiveClass = () => {
-  [...paginationWrapper].forEach(item => {
-    [...item.children].forEach(inner => inner.classList.remove('bicycles__pagination-item_active'));
+  [...paginationWrapper].forEach((item) => {
+    [...item.children].forEach((inner) =>
+      inner.classList.remove('bicycles__pagination-item_active')
+    );
     [...item.children][0].classList.add('bicycles__pagination-item_active');
   });
 };
 const setPaginationActiveSlide = (target) => {
   const array = target.closest('.bicycles__pagination');
   const elements = [...array.children];
-  elements.forEach(item => item.classList.remove('bicycles__pagination-item_active'));
+  elements.forEach((item) => item.classList.remove('bicycles__pagination-item_active'));
   target.classList.add('bicycles__pagination-item_active');
-  paginationActiveSlide = elements.findIndex(item => item.classList.value.includes('bicycles__pagination-item_active'));
+  paginationActiveSlide = elements.findIndex((item) =>
+    item.classList.value.includes('bicycles__pagination-item_active')
+  );
 };
 const setPagination = (query) => {
   if (query.matches) {
@@ -158,7 +162,7 @@ const setPagination = (query) => {
   }
 };
 const setButtonActiveClass = (target) => {
-  bicyclesButtons.forEach(item => item.classList.remove('bicycles__button_active'));
+  bicyclesButtons.forEach((item) => item.classList.remove('bicycles__button_active'));
   if (bicyclesIndex === target.attributes['data-name'].value) {
     target.classList.add('bicycles__button_active');
   }

@@ -5,7 +5,7 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 1.29;
-  transition: color .25s ease;
+  transition: color 0.25s ease;
   text-align: center;
 
   @include respond(desktop) {
