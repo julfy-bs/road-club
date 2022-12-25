@@ -1,0 +1,9 @@
+.bicycles__button_active {
+  font-weight: 600;
+  color: var(--theme-title-color);
+  opacity: 1;
+
+  &:hover {
+    opacity: 1;
+  }
+}

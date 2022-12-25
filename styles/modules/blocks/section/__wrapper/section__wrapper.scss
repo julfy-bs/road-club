@@ -1,0 +1,10 @@
+@import '../../../../helpers/mixins/media';
+
+.section__wrapper {
+  gap: 40px;
+  width: 100%;
+
+  @include respond(laptop) {
+    gap: 50px;
+  }
+}

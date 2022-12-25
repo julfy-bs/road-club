@@ -1,0 +1,9 @@
+@import '../../../../helpers/mixins/media';
+
+.navigation_position_header {
+  display: none;
+
+  @include respond(tablet) {
+    display: flex;
+  }
+}

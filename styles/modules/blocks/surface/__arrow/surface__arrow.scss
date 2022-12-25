@@ -1,0 +1,17 @@
+@import '../../../../helpers/mixins/media';
+
+.surface__arrow {
+  align-self: center;
+  background-color: var(--theme-title-color);
+  display: inline-flex;
+  height: 9px;
+  -webkit-mask-image: url('/images/icons/arrow.svg');
+  mask-image: url('/images/icons/arrow.svg');
+  transition: background-color 0.5s ease;
+  width: 5px;
+
+  @include respond(laptop) {
+    height: 16px;
+    width: 9px;
+  }
+}

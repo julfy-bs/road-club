@@ -1,0 +1,13 @@
+@import '../../../../../helpers/mixins/media';
+
+.surface__slider_role_image {
+  display: none;
+
+  @include respond(laptop) {
+    display: grid;
+    gap: 40px;
+    grid-auto-columns: calc(50% - 20px);
+    grid-auto-flow: column;
+    transition: transform 0.5s ease-in-out;
+  }
+}
