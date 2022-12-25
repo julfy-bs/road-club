@@ -6,7 +6,6 @@
   "scripts": {
     "lint:fix": "eslint --fix",
     "prettier:fix": "prettier --write .",
-    "prepare": "husky install",
     "sass-dev": "sass --watch --update --style=expanded ./styles/index.scss/:./styles/main.css",
     "sass-prod": "sass --no-source-map --style=compressed ./styles/index.scss/:./styles/main.css"
   },
