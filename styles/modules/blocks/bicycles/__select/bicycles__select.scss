@@ -1,0 +1,21 @@
+@import '../../../../../styles/helpers/mixins/media';
+
+.bicycles__select {
+  appearance: none;
+  border: 1px solid var(--bicycles-select-border);
+  border-radius: 2px;
+  color: var(--theme-title-color);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.27;
+  min-width: 114px;
+  padding: 8px 12px;
+  position: relative;
+
+  @include respond(laptop) {
+    min-height: 50px;
+    min-width: 160px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}

@@ -1,0 +1,10 @@
+@import '../../../../../styles/helpers/mixins/media';
+
+.bicycles__item {
+  width: 100%;
+  display: none;
+
+  @include respond(laptop) {
+    display: grid;
+  }
+}

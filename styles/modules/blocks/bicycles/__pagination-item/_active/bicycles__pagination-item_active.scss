@@ -1,0 +1,7 @@
+.bicycles__pagination-item_active {
+  background-color: var(--theme-title-color);
+
+  &:hover {
+    cursor: default;
+  }
+}
