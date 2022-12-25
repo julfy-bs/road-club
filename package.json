@@ -34,8 +34,5 @@
     "url": "https://github.com/julfy-bs/road-club/issues"
   },
   "homepage": "https://github.com/julfy-bs/road-club#readme",
-  "dependencies": {
-    "normalize.css": "^8.0.1"
-  },
   "publicPath": "./"
 }
