@@ -49,6 +49,7 @@
 @import './modules/blocks/section/__wrapper/_position/section__wrapper_position_quote';
 @import './modules/blocks/section/__wrapper/_position/section__wrapper_position_surface';
 @import './modules/blocks/section/__wrapper/_position/section__wrapper_position_bicycles';
+@import './modules/blocks/section/__wrapper/_position/section__wrapper_position_workout';
 
 /* hero */
 @import './modules/blocks/hero/hero';
@@ -116,6 +117,14 @@
 @import './modules/blocks/bicycles/__pagination/bicycles__pagination';
 @import './modules/blocks/bicycles/__pagination-item/bicycles__pagination-item';
 @import './modules/blocks/bicycles/__pagination-item/_active/bicycles__pagination-item_active';
+
+/* workout */
+@import './modules/blocks/workout/workout';
+@import './modules/blocks/workout/__title/workout__title';
+@import './modules/blocks/workout/__description/workout__description';
+@import './modules/blocks/workout/__image/workout__image';
+@import './modules/blocks/workout/__links/workout__links';
+@import './modules/blocks/workout/__link/workout__link';
 
 /* footer */
 @import './modules/blocks/footer/footer';

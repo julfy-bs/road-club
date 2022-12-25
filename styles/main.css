@@ -43,7 +43,7 @@
   --theme-background: #f4f4f4;
   --theme-background-footer: #ebebeb;
   --theme-title-color: #151515;
-  --theme-text-primary-color: rgba(34, 34, 34, 0.4392156863);
+  --theme-text-primary-color: #222;
   --theme-text-secondary-color: #cfcfcf;
   --theme-border-color: rgba(199, 199, 199, 0.3137254902);
   --theme-border-hover-color: #c7c7c7;
@@ -338,6 +338,7 @@
 
 .section__description {
   color: var(--theme-text-primary-color);
+  opacity: 0.7;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
@@ -411,9 +412,28 @@
 
 .section__wrapper_position_bicycles {
   display: flex;
-  gap: 20px;
   flex-direction: column;
+  gap: 20px;
   padding-top: 40px;
+}
+@media screen and (min-width: 769px) {
+  .section__wrapper_position_bicycles {
+    padding: 0;
+  }
+}
+
+.section__wrapper_position_workout {
+  display: grid;
+  grid-auto-columns: 1fr;
+  gap: 40px;
+  padding-top: 40px;
+}
+@media screen and (min-width: 769px) {
+  .section__wrapper_position_workout {
+    padding: 0;
+    grid-auto-rows: min-content;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* hero */
@@ -648,6 +668,7 @@
   font-size: 10px;
   line-height: 1.6;
   color: var(--theme-text-primary-color);
+  opacity: 0.7;
   transition: color 0.25s ease;
 }
 
@@ -869,16 +890,24 @@
 }
 
 .bicycles__button {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
   color: var(--theme-text-primary-color);
-  transition: color 0.25s ease;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.56;
+  opacity: 0.7;
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+.bicycles__button:hover {
+  opacity: 0.6;
 }
 
 .bicycles__button_active {
   font-weight: 600;
   color: var(--theme-title-color);
+  opacity: 1;
+}
+.bicycles__button_active:hover {
+  opacity: 1;
 }
 
 .bicycles__form {
@@ -1049,8 +1078,8 @@
 }
 
 .bicycles__pagination-item {
-  width: 24px;
-  height: 24px;
+  width: 14px;
+  height: 14px;
   display: inline-flex;
   background-color: var(--bicycles-pagination-item);
   border-radius: 50%;
@@ -1064,6 +1093,59 @@
 }
 .bicycles__pagination-item_active:hover {
   cursor: default;
+}
+
+/* workout */
+.workout {
+  padding: 40px 0 60px;
+}
+
+@media screen and (min-width: 769px) {
+  .workout__title {
+    max-width: 460px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .workout__description {
+    max-width: 460px;
+  }
+}
+
+.workout__image {
+  width: 100%;
+  min-width: 284px;
+  grid-column: 2/3;
+  grid-row: 1/5;
+}
+
+.workout__links {
+  color: var(--theme-title-color);
+  display: flex;
+  gap: 30px;
+  transition: color 0.25s ease;
+}
+@media screen and (min-width: 769px) {
+  .workout__links {
+    align-items: flex-end;
+    grid-row: 4/5;
+  }
+}
+
+.workout__link {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+  transition: opacity 0.25s ease;
+}
+.workout__link:hover {
+  opacity: 0.75;
+}
+@media screen and (min-width: 769px) {
+  .workout__link {
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }
 
 /* footer */
