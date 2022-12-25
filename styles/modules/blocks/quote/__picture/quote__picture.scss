@@ -1,0 +1,7 @@
+@import '../../../../helpers/mixins/media';
+
+.quote__picture {
+  @include respond(laptop) {
+    grid-row: 1 / 3;
+  }
+}

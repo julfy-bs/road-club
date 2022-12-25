@@ -1,0 +1,17 @@
+@import '../../../../helpers/mixins/media';
+
+.workout__link {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+  transition: opacity 0.25s ease;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  @include respond(laptop) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}

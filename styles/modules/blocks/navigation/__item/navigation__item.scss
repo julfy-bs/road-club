@@ -1,0 +1,14 @@
+@import '../../../../helpers/mixins/media';
+
+.navigation__item {
+  color: var(--theme-title-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  transition: color 0.25s ease;
+
+  @include respond(tablet) {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}

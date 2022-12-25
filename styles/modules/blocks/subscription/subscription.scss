@@ -1,0 +1,15 @@
+@import '../../../../styles/helpers/mixins/media';
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include respond(tablet) {
+    max-width: 360px;
+  }
+
+  @include respond(laptop) {
+    gap: 50px;
+  }
+}
