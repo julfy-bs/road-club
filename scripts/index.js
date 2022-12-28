@@ -81,7 +81,8 @@ const moveContentSlider = (slide) => {
   return `translateX(calc(100% * ${slide} * -1)`;
 };
 const moveImageSlider = (slide) => {
-  return `translateX(calc((50% + 20px) * ${slide} * -1)`;
+  const gap = '40px';
+  return `translateX(calc((50% + 10px + (${gap} / 2)) * ${slide} * -1)`;
 };
 const openSlide = (slide) => {
   setSlideActive(slide);

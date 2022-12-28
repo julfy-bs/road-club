@@ -1,4 +1,10 @@
+@import '../../../../styles/helpers/mixins/media';
+
 .bicycles {
   box-sizing: border-box;
   padding: 40px 0;
+
+  @include respond(laptop) {
+    padding-top: 60px;
+  }
 }

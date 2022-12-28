@@ -51,7 +51,7 @@ $color-silver-chalice: #adadad;
   --page-padding-desktop-side: 120px;
 
   /* header */
-  --header-height: 74px;
+  --header-height: 56px;
 
   /* hero-slide */
   --hero-slide-color: #{$color-cultured};
@@ -73,7 +73,7 @@ $color-silver-chalice: #adadad;
   }
 
   @include respond(laptop) {
-    --header-height: 56px;
+    --header-height: 74px;
   }
 }
 
