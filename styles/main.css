@@ -436,11 +436,11 @@
 
 .section__wrapper_position_workout {
   display: grid;
-  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
   gap: 40px;
   padding-top: 40px;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 481px) {
   .section__wrapper_position_workout {
     padding-top: 20px;
     grid-auto-rows: min-content;
@@ -1162,8 +1162,13 @@
 .workout__image {
   width: 100%;
   min-width: 284px;
-  grid-column: 2/3;
-  grid-row: 1/5;
+}
+@media screen and (min-width: 481px) {
+  .workout__image {
+    min-width: auto;
+    grid-column: 2/3;
+    grid-row: 1/5;
+  }
 }
 
 .workout__links {

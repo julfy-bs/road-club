@@ -2,11 +2,11 @@
 
 .section__wrapper_position_workout {
   display: grid;
-  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
   gap: 40px;
   padding-top: 40px;
 
-  @include respond(laptop) {
+  @include respond(tablet) {
     padding-top: 20px;
     grid-auto-rows: min-content;
     grid-template-columns: repeat(2, 1fr);
