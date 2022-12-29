@@ -1,15 +1,18 @@
+@import '../../../helpers/mixins/media';
+
 .header {
-  display: flex;
-  justify-content: center;
   align-items: center;
   background-color: var(--theme-background);
-  min-height: var(--header-height);
-  z-index: 100;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  min-height: var(--header-height);
+  transition: background-color 0.5s ease, color 0.25s ease;
+  z-index: var(--z-index-header);
 
   @include respond(tablet) {
+    border-bottom: 1px solid var(--theme-border-color);
     position: sticky;
     top: 0;
-    border-bottom: 1px solid var(--theme-border-color);
   }
 }

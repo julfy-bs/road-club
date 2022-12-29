@@ -25,7 +25,7 @@
   /* switch */
   --swith-dot-color: #24b47e;
   /* z-index */
-  --z-index-banner: 10;
+  --z-index-header: 10;
   --z-index-popup: 10000;
 }
 @media screen and (min-width: 481px) {
@@ -84,8 +84,8 @@
   margin: 0 auto;
   min-height: 100vh;
   min-width: var(--page-min-width);
-  width: 100%;
   transition: background-color 0.5s ease, color 0.25s ease;
+  width: 100%;
 }
 
 .page__container {
@@ -190,19 +190,20 @@
 
 /* header */
 .header {
-  display: flex;
-  justify-content: center;
   align-items: center;
   background-color: var(--theme-background);
-  min-height: var(--header-height);
-  z-index: 100;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  min-height: var(--header-height);
+  transition: background-color 0.5s ease, color 0.25s ease;
+  z-index: var(--z-index-header);
 }
 @media screen and (min-width: 481px) {
   .header {
+    border-bottom: 1px solid var(--theme-border-color);
     position: sticky;
     top: 0;
-    border-bottom: 1px solid var(--theme-border-color);
   }
 }
 
@@ -436,15 +437,15 @@
 
 .section__wrapper_position_workout {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 40px;
+  grid-template-columns: 1fr;
   padding-top: 40px;
 }
 @media screen and (min-width: 481px) {
   .section__wrapper_position_workout {
-    padding-top: 20px;
     grid-auto-rows: min-content;
     grid-template-columns: repeat(2, 1fr);
+    padding-top: 20px;
   }
 }
 
@@ -1160,14 +1161,14 @@
 }
 
 .workout__image {
-  width: 100%;
   min-width: 284px;
+  width: 100%;
 }
 @media screen and (min-width: 481px) {
   .workout__image {
-    min-width: auto;
     grid-column: 2/3;
     grid-row: 1/5;
+    min-width: auto;
   }
 }
 

@@ -34,9 +34,11 @@ const setTheme = (theme) => {
   userTheme = theme;
   if (theme === 'dark') {
     page.classList.remove('page_theme_light');
+    themeButtonArray.forEach((item) => item.setAttribute('aria-checked', 'true'));
     themeButtonArray.forEach((item) => item.classList.add('switch_active'));
   } else {
     page.classList.remove('page_theme_dark');
+    themeButtonArray.forEach((item) => item.setAttribute('aria-checked', 'false'));
     themeButtonArray.forEach((item) => item.classList.remove('switch_active'));
   }
   page.classList.add(`page_theme_${theme}`);

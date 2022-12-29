@@ -65,7 +65,7 @@ $color-silver-chalice: #adadad;
   --swith-dot-color: #{$color-green-crayola};
 
   /* z-index */
-  --z-index-banner: 10;
+  --z-index-header: 10;
   --z-index-popup: 10000;
 
   @include respond(tablet) {
