@@ -31,10 +31,6 @@
 @media screen and (min-width: 481px) {
   :root {
     --page-padding-side: 12px;
-  }
-}
-@media screen and (min-width: 769px) {
-  :root {
     --header-height: 74px;
   }
 }
@@ -197,7 +193,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--theme-background);
   min-height: var(--header-height);
+  z-index: 100;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 481px) {
+  .header {
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid var(--theme-border-color);
+  }
 }
 
 .header__content {
@@ -436,7 +442,7 @@
 }
 @media screen and (min-width: 769px) {
   .section__wrapper_position_workout {
-    padding: 0;
+    padding-top: 20px;
     grid-auto-rows: min-content;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1017,6 +1023,11 @@
     grid-template-columns: repeat(3, minmax(200px, 1fr));
   }
 }
+@media screen and (min-width: 1025px) {
+  .bicycles__list {
+    padding: 90px 0 0;
+  }
+}
 
 .bicycles__item {
   width: 100%;
@@ -1054,7 +1065,6 @@
     background: transparent;
     box-shadow: none;
     gap: 22px;
-    padding: 90px 0 0;
   }
 }
 
@@ -1241,6 +1251,7 @@
   font-weight: 600;
   line-height: 1.33;
   transition: color 0.25s ease;
+  max-width: 228px;
 }
 
 .subscription__form {
@@ -1338,6 +1349,7 @@
 }
 @media screen and (min-width: 481px) {
   .appearance_position_footer {
+    margin-top: -10px;
     display: flex;
   }
 }
@@ -1408,6 +1420,11 @@
   visibility: hidden;
   width: 100vw;
   z-index: var(--z-index-popup);
+}
+@media screen and (min-width: 481px) {
+  .popup {
+    display: none;
+  }
 }
 
 .popup_active {

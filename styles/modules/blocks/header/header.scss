@@ -2,5 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--theme-background);
   min-height: var(--header-height);
+  z-index: 100;
+  box-sizing: border-box;
+
+  @include respond(tablet) {
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid var(--theme-border-color);
+  }
 }

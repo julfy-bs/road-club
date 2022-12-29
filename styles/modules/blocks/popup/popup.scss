@@ -12,4 +12,8 @@
   visibility: hidden;
   width: 100vw;
   z-index: var(--z-index-popup);
+
+  @include respond(tablet) {
+    display: none;
+  }
 }

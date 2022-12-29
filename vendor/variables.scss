@@ -70,9 +70,6 @@ $color-silver-chalice: #adadad;
 
   @include respond(tablet) {
     --page-padding-side: 12px;
-  }
-
-  @include respond(laptop) {
     --header-height: 74px;
   }
 }
