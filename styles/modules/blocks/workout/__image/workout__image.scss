@@ -4,7 +4,7 @@
   min-width: 284px;
   width: 100%;
 
-  @include respond(tablet) {
+  @include respond(laptop) {
     grid-column: 2 / 3;
     grid-row: 1 / 5;
     min-width: auto;

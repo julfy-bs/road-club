@@ -1,0 +1,11 @@
+@import '../../../../helpers/mixins/media';
+
+.section_lined_top {
+  border-top: 1px solid var(--theme-border-color);
+  margin-top: 20px;
+
+  @include respond(laptop) {
+    border: none;
+    margin: 0;
+  }
+}
