@@ -5,10 +5,10 @@
   bottom: 0;
   box-sizing: border-box;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   opacity: 0;
   padding: 144px var(--page-padding-mobile-side) 36px;
-  position: absolute;
+  position: fixed;
   right: 0;
   transition: visibility 0.25s ease, opacity 0.3s ease;
   visibility: hidden;
