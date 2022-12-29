@@ -22,7 +22,7 @@
 
 /* header */
 @import './modules/blocks/header/header';
-@import 'modules/blocks/header/__content/header__content';
+@import './modules/blocks/header/__content/header__content';
 
 /* navigation */
 @import './modules/blocks/navigation/navigation';
@@ -35,9 +35,9 @@
 @import './modules/blocks/burger/burger';
 @import './modules/blocks/burger/__container/burger__container';
 @import './modules/blocks/burger/__line/burger__line';
-@import './modules/blocks/burger/__line/_position/burger__line_position_top';
-@import './modules/blocks/burger/__line/_position/burger__line_position_middle';
-@import './modules/blocks/burger/__line/_position/burger__line_position_bottom';
+@import './modules/blocks/burger/__line/_fraction/burger__line_fraction_third';
+@import './modules/blocks/burger/__line/_fraction/burger__line_fraction_full';
+@import './modules/blocks/burger/__line/_fraction/burger__line_fraction_ninth';
 
 /* section */
 @import './modules/blocks/section/section';
@@ -60,7 +60,7 @@
 
 /* button */
 @import './modules/blocks/button/button';
-@import 'modules/blocks/button/_animation/button_animation_gradient';
+@import './modules/blocks/button/_animation/button_animation_gradient';
 
 /* quote */
 @import './modules/blocks/quote/quote';
