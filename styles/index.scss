@@ -22,7 +22,7 @@
 
 /* header */
 @import './modules/blocks/header/header';
-@import 'modules/blocks/header/__content/header__content';
+@import './modules/blocks/header/__content/header__content';
 
 /* navigation */
 @import './modules/blocks/navigation/navigation';
@@ -35,24 +35,20 @@
 @import './modules/blocks/burger/burger';
 @import './modules/blocks/burger/__container/burger__container';
 @import './modules/blocks/burger/__line/burger__line';
-@import './modules/blocks/burger/__line/_position/burger__line_position_top';
-@import './modules/blocks/burger/__line/_position/burger__line_position_middle';
-@import './modules/blocks/burger/__line/_position/burger__line_position_bottom';
+@import './modules/blocks/burger/__line/_fraction/burger__line_fraction_third';
+@import './modules/blocks/burger/__line/_fraction/burger__line_fraction_full';
+@import './modules/blocks/burger/__line/_fraction/burger__line_fraction_ninth';
 
 /* section */
 @import './modules/blocks/section/section';
+@import './modules/blocks/section/_lined/section_lined_top';
 @import './modules/blocks/section/__title/section__title';
 @import './modules/blocks/section/__description/section__description';
 @import './modules/blocks/section/__wrapper/section__wrapper';
-@import './modules/blocks/section/__wrapper/_type/section__wrapper_type_lined';
-@import './modules/blocks/section/__wrapper/_position/section__wrapper_position_hero';
-@import './modules/blocks/section/__wrapper/_position/section__wrapper_position_quote';
-@import './modules/blocks/section/__wrapper/_position/section__wrapper_position_surface';
-@import './modules/blocks/section/__wrapper/_position/section__wrapper_position_bicycles';
-@import './modules/blocks/section/__wrapper/_position/section__wrapper_position_workout';
 
 /* hero */
 @import './modules/blocks/hero/hero';
+@import './modules/blocks/hero/__wrapper/hero__wrapper';
 @import './modules/blocks/hero/__model/hero__model';
 @import './modules/blocks/hero/__slide/hero__slide';
 @import './modules/blocks/hero/__bike/hero__bike';
@@ -60,10 +56,12 @@
 
 /* button */
 @import './modules/blocks/button/button';
-@import 'modules/blocks/button/_gradient/button_animation_gradient';
+@import './modules/blocks/button/_animation/button_animation_gradient';
 
 /* quote */
 @import './modules/blocks/quote/quote';
+@import './modules/blocks/quote/__wrapper/quote__wrapper';
+@import './modules/blocks/quote/__content/quote__content';
 @import './modules/blocks/quote/__picture/quote__picture';
 @import './modules/blocks/quote/__image/quote__image';
 @import './modules/blocks/quote/__body/quote__body';
@@ -74,6 +72,7 @@
 
 /* surface */
 @import './modules/blocks/surface/surface';
+@import './modules/blocks/surface/__wrapper/surface__wrapper';
 @import './modules/blocks/surface/__image/surface__image';
 @import './modules/blocks/surface/__image-wrapper/surface__image-wrapper';
 @import './modules/blocks/surface/__article/surface__article';
@@ -96,6 +95,7 @@
 
 /* bicycles */
 @import './modules/blocks/bicycles/bicycles';
+@import './modules/blocks/bicycles/__wrapper/bicycles__wrapper';
 @import './modules/blocks/bicycles/__header/bicycles__header';
 @import './modules/blocks/bicycles/__controllers/bicycles__controllers';
 @import './modules/blocks/bicycles/__controllers-item/bicycles__controllers-item';
@@ -120,6 +120,7 @@
 
 /* workout */
 @import './modules/blocks/workout/workout';
+@import './modules/blocks/workout/__wrapper/workout__wrapper';
 @import './modules/blocks/workout/__title/workout__title';
 @import './modules/blocks/workout/__description/workout__description';
 @import './modules/blocks/workout/__image/workout__image';

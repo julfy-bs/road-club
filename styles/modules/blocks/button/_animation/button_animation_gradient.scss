@@ -5,6 +5,7 @@
   background-size: 200% 100%;
   overflow: hidden;
   transition: background-position 0.3s ease;
+  letter-spacing: 1px;
 
   &:hover {
     background-position: bottom left;

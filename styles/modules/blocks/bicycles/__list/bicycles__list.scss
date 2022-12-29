@@ -10,4 +10,8 @@
     gap: 20px;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
   }
+
+  @include respond(desktop) {
+    padding: 90px 0 0;
+  }
 }

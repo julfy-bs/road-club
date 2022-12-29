@@ -21,6 +21,6 @@
   }
 
   @include respond(fullhd) {
-    max-width: max(50%, 610px);
+    max-width: 610px;
   }
 }

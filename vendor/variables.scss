@@ -51,7 +51,7 @@ $color-silver-chalice: #adadad;
   --page-padding-desktop-side: 120px;
 
   /* header */
-  --header-height: 74px;
+  --header-height: 56px;
 
   /* hero-slide */
   --hero-slide-color: #{$color-cultured};
@@ -65,15 +65,12 @@ $color-silver-chalice: #adadad;
   --swith-dot-color: #{$color-green-crayola};
 
   /* z-index */
-  --z-index-banner: 10;
+  --z-index-header: 10;
   --z-index-popup: 10000;
 
   @include respond(tablet) {
     --page-padding-side: 12px;
-  }
-
-  @include respond(laptop) {
-    --header-height: 56px;
+    --header-height: 74px;
   }
 }
 

@@ -1,11 +1,13 @@
-@import '../../../../../helpers/mixins/media';
+@import '../../../../helpers/mixins/media';
 
-.section__wrapper_position_quote {
+.quote__content {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 40px;
 
   @include respond(laptop) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
   }
 
   @include respond(desktop) {

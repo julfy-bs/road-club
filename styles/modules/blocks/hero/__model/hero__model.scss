@@ -24,4 +24,8 @@
   @include respond(desktop) {
     padding-top: 90px;
   }
+
+  @include respond(fullhd) {
+    padding-top: 117px;
+  }
 }

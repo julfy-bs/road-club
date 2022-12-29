@@ -1,7 +1,12 @@
 .burger__line {
   background-color: var(--theme-title-color);
   height: 2px;
-  position: absolute;
   transition: background-color 0.5s ease, transform 0.25s ease, color 0.25s ease, opacity 0.25s ease;
   width: 22px;
+}
+
+.burger:hover {
+  .burger__line {
+    opacity: 0.75;
+  }
 }

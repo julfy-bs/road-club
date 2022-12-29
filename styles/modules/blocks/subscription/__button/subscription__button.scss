@@ -10,3 +10,12 @@
   transition: visibility 0.25s ease, opacity 0.25s ease;
   visibility: hidden;
 }
+
+.subscription__form:focus-within .subscription__button {
+  opacity: 1;
+  visibility: visible;
+
+  &:hover {
+    opacity: .7;
+  }
+}

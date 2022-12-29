@@ -5,6 +5,7 @@
   min-height: 50px;
   padding: 11px 20px;
   transition: border-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  font-size: 13px;
 
   &::placeholder {
     color: var(--theme-title-color);
@@ -15,4 +16,13 @@
   &:hover {
     cursor: pointer;
   }
+}
+
+.subscription__form:focus-within .subscription__input {
+  border-color: var(--theme-border-hover-color);
+  outline: none;
+}
+
+.subscription__form:focus-within .subscription__input::placeholder {
+  color: transparent;
 }

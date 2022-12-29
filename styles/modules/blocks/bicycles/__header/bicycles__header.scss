@@ -5,9 +5,9 @@
   flex-direction: column;
   gap: 40px;
 
-  @include respond(laptop) {
+  @include respond(tablet) {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
   }
 }

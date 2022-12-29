@@ -1,0 +1,13 @@
+@import '../../../../helpers/mixins/media';
+
+.workout__wrapper {
+  box-sizing: border-box;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr;
+
+  @include respond(laptop) {
+    grid-auto-rows: min-content;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

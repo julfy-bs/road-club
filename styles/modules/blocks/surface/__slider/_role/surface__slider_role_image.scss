@@ -10,4 +10,8 @@
     grid-auto-flow: column;
     transition: transform 0.5s ease-in-out;
   }
+
+  @include respond(desktop) {
+    padding-top: 30px;
+  }
 }

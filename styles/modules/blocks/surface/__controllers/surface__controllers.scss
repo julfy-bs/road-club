@@ -4,11 +4,11 @@
   display: flex;
   gap: 10px;
   position: absolute;
-  right: 0;
-  top: 47px;
+  right: var(--page-padding-mobile-side);
+  top: 7px;
 
   @include respond(laptop) {
-    position: static;
     gap: 20px;
+    position: static;
   }
 }

@@ -4,6 +4,7 @@
   display: none;
 
   @include respond(tablet) {
+    margin-top: -10px;
     display: flex;
   }
 }

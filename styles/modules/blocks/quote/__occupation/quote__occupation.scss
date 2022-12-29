@@ -1,7 +1,14 @@
+@import '../../../../helpers/mixins/media';
+
 .quote__occupation {
   font-size: 10px;
   line-height: 1.6;
   color: var(--theme-text-primary-color);
   opacity: 0.7;
   transition: color 0.25s ease;
+
+  @include respond(desktop) {
+    font-size: 16px;
+    line-height: 1.75;
+  }
 }

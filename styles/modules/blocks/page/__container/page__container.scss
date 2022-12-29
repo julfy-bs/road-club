@@ -1,9 +1,7 @@
 @import '../../../../helpers/mixins/media';
 
 .page__container {
-  box-sizing: border-box;
   width: 100%;
-  //margin: 0 auto;
   max-width: var(--page-max-width);
   padding: 0 var(--page-padding-mobile-side);
 

@@ -6,7 +6,7 @@ const buttonCloseBurger = popupBurger.querySelector('.popup__close');
 const subscriptionForm = document.querySelector('.subscription__form');
 const subscriptionInput = subscriptionForm.querySelector('.subscription__input');
 const subscriptionButton = subscriptionForm.querySelector('.subscription__button');
-const slider = document.querySelector('.section__wrapper_position_surface');
+const slider = document.querySelector('.surface__wrapper');
 const sliderContent = slider.querySelector('.surface__slider_role_content');
 const sliderImage = slider.querySelector('.surface__slider_role_image');
 const slidesContentArray = sliderContent.querySelectorAll('.surface__slider-item');
@@ -22,7 +22,7 @@ const bicyclesGravelArray = bicycles.querySelector('#gravel').querySelectorAll('
 const bicyclesTtArray = bicycles.querySelector('#tt').querySelectorAll('.bicycles__item');
 const paginationWrapper = document.querySelectorAll('.bicycles__pagination');
 const paginationItems = document.querySelectorAll('.bicycles__pagination-item');
-const mediaQueryPhone = window.matchMedia('(max-width: 768px)');
+const mediaQueryPhone = 768;
 let userTheme = localStorage.getItem('theme') || '';
 let isUserPrefersDarkMode = false;
 let activeSlide = 0;
@@ -34,9 +34,11 @@ const setTheme = (theme) => {
   userTheme = theme;
   if (theme === 'dark') {
     page.classList.remove('page_theme_light');
+    themeButtonArray.forEach((item) => item.setAttribute('aria-checked', 'true'));
     themeButtonArray.forEach((item) => item.classList.add('switch_active'));
   } else {
     page.classList.remove('page_theme_dark');
+    themeButtonArray.forEach((item) => item.setAttribute('aria-checked', 'false'));
     themeButtonArray.forEach((item) => item.classList.remove('switch_active'));
   }
   page.classList.add(`page_theme_${theme}`);
@@ -77,11 +79,10 @@ const setSlideActive = (slide) => {
   slidesContentArray[slide].classList.add(activeClass);
   slidesImageArray[slide].classList.add(activeClass);
 };
-const moveContentSlider = (slide) => {
-  return `translateX(calc(100% * ${slide} * -1)`;
-};
+const moveContentSlider = (slide) => `translateX(calc(100% * ${slide} * -1)`;
 const moveImageSlider = (slide) => {
-  return `translateX(calc((50% + 20px) * ${slide} * -1)`;
+  const gap = '40px';
+  return `translateX(calc((50% + 10px + (${gap} / 2)) * ${slide} * -1)`;
 };
 const openSlide = (slide) => {
   setSlideActive(slide);
@@ -93,7 +94,7 @@ const slideNext = (amount, position) => {
     activeSlide = 0;
   }
   if (position >= 0 && position < amount - 1) {
-    activeSlide++;
+    activeSlide += 1;
   }
   openSlide(activeSlide);
 };
@@ -102,7 +103,7 @@ const slidePrev = (amount, position = 0) => {
     activeSlide = amount - 1;
   }
   if (position >= 1 && position < amount) {
-    activeSlide--;
+    activeSlide -= 1;
   }
   openSlide(activeSlide);
 };
@@ -131,9 +132,9 @@ const changeBicyclesActiveClass = (array, index, parent) => {
     });
   }
   if (!parent) {
-    array.forEach((item, index) => {
+    array.forEach((item, arrayIndex) => {
       item.classList.remove('bicycles__item_active');
-      if (index === paginationActiveSlide) {
+      if (arrayIndex === paginationActiveSlide) {
         item.classList.add('bicycles__item_active');
       }
     });
@@ -157,8 +158,12 @@ const setPaginationActiveSlide = (target) => {
   );
 };
 const setPagination = (query) => {
-  if (query.matches) {
-    changeBicyclesActiveClass(activeBicyclesArray, bicyclesIndex, false);
+  changeBicyclesActiveClass(activeBicyclesArray, bicyclesIndex, false);
+  if (window.innerWidth <= query) {
+    setInterval(() => {
+      // TODO: добавить автоматическую прокрутку
+      // console.log('крутись');
+    }, 5000);
   }
 };
 const setButtonActiveClass = (target) => {
