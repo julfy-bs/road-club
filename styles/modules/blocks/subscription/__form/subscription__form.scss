@@ -10,6 +10,10 @@
   &:focus-within .subscription__button {
     opacity: 1;
     visibility: visible;
+
+    &:hover {
+      opacity: .7;
+    }
   }
 
   &:focus-within .subscription__input::placeholder {
