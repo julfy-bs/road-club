@@ -1,4 +1,8 @@
 .burger__line_position_top {
-  top: 0;
   left: 0;
+  top: 0;
+}
+
+.burger:hover .burger__line_position_bottom {
+  transform: translate(8px);
 }

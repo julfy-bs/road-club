@@ -272,25 +272,13 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  width: 40px;
   padding: 10px 6px;
+  width: 40px;
 }
 @media screen and (min-width: 481px) {
   .burger {
     display: none;
   }
-}
-.burger:hover .burger__line {
-  opacity: 0.75;
-}
-.burger:hover .burger__line_position_top {
-  transform: translate(2px);
-}
-.burger:hover .burger__line_position_middle {
-  transform: translate(0);
-}
-.burger:hover .burger__line_position_bottom {
-  transform: translate(8px);
 }
 
 .burger__container {
@@ -308,9 +296,17 @@
   width: 22px;
 }
 
+.burger:hover .burger__line {
+  opacity: 0.75;
+}
+
 .burger__line_position_top {
-  top: 0;
   left: 0;
+  top: 0;
+}
+
+.burger:hover .burger__line_position_bottom {
+  transform: translate(8px);
 }
 
 .burger__line_position_middle {
@@ -318,9 +314,17 @@
   top: 8px;
 }
 
+.burger:hover .burger__line_position_middle {
+  transform: translate(0);
+}
+
 .burger__line_position_bottom {
   left: 0;
   top: 16px;
+}
+
+.burger:hover .burger__line_position_top {
+  transform: translate(2px);
 }
 
 /* section */
@@ -1267,20 +1271,6 @@
   display: flex;
   flex-direction: column;
 }
-.subscription__form:focus-within .subscription__input {
-  border-color: var(--theme-border-hover-color);
-  outline: none;
-}
-.subscription__form:focus-within .subscription__button {
-  opacity: 1;
-  visibility: visible;
-}
-.subscription__form:focus-within .subscription__button:hover {
-  opacity: 0.7;
-}
-.subscription__form:focus-within .subscription__input::placeholder {
-  color: transparent;
-}
 
 .subscription__label {
   position: relative;
@@ -1304,6 +1294,15 @@
   cursor: pointer;
 }
 
+.subscription__form:focus-within .subscription__input {
+  border-color: var(--theme-border-hover-color);
+  outline: none;
+}
+
+.subscription__form:focus-within .subscription__input::placeholder {
+  color: transparent;
+}
+
 .subscription__button {
   align-items: center;
   color: var(--theme-title-color);
@@ -1315,6 +1314,14 @@
   top: 11px;
   transition: visibility 0.25s ease, opacity 0.25s ease;
   visibility: hidden;
+}
+
+.subscription__form:focus-within .subscription__button {
+  opacity: 1;
+  visibility: visible;
+}
+.subscription__form:focus-within .subscription__button:hover {
+  opacity: 0.7;
 }
 
 /* disclaimer */

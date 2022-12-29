@@ -1,22 +1,4 @@
 .subscription__form {
   display: flex;
   flex-direction: column;
-
-  &:focus-within .subscription__input {
-    border-color: var(--theme-border-hover-color);
-    outline: none;
-  }
-
-  &:focus-within .subscription__button {
-    opacity: 1;
-    visibility: visible;
-
-    &:hover {
-      opacity: .7;
-    }
-  }
-
-  &:focus-within .subscription__input::placeholder {
-    color: transparent;
-  }
 }

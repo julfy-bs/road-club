@@ -17,3 +17,12 @@
     cursor: pointer;
   }
 }
+
+.subscription__form:focus-within .subscription__input {
+  border-color: var(--theme-border-hover-color);
+  outline: none;
+}
+
+.subscription__form:focus-within .subscription__input::placeholder {
+  color: transparent;
+}
