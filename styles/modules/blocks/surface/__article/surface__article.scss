@@ -1,0 +1,12 @@
+@import '../../../../helpers/mixins/media';
+
+.surface__article {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include respond(laptop) {
+    max-width: 460px;
+    gap: 50px;
+  }
+}

@@ -1,0 +1,24 @@
+@import '../../../../../styles/helpers/mixins/media';
+
+.bicycles__label {
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 12px;
+    top: 13px;
+    width: 6px;
+    height: 10px;
+    background-color: var(--theme-title-color);
+    transform: rotate(-90deg);
+    mask-image: url('../images/icons/arrow.svg');
+    -webkit-mask-image: url('../images/icons/arrow.svg');
+
+    @include respond(laptop) {
+      top: 18px;
+      right: 20px;
+      width: 10px;
+      height: 18px;
+    }
+  }
+}

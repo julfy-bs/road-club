@@ -1,0 +1,16 @@
+@import '../../../helpers/mixins/media';
+
+.hero {
+  align-items: center;
+  box-sizing: border-box;
+  padding: 40px 0;
+  position: relative;
+  width: 100%;
+
+  @include respond(laptop) {
+    align-items: flex-start;
+    max-width: var(--page-max-width);
+    min-height: 856px;
+    padding: 0;
+  }
+}

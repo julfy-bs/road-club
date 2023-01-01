@@ -1,0 +1,20 @@
+@import '../../../helpers/mixins/media';
+
+.footer {
+  align-items: center;
+  background-color: var(--theme-background-footer);
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 16px;
+  color: var(--theme-title-color);
+  transition: background-color 0.5s ease, color 0.25s ease;
+
+  @include respond(tablet) {
+    padding-bottom: 40px;
+  }
+
+  @include respond(laptop) {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+}

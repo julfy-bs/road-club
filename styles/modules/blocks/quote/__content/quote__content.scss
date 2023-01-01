@@ -1,0 +1,17 @@
+@import '../../../../helpers/mixins/media';
+
+.quote__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+
+  @include respond(laptop) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+
+  @include respond(desktop) {
+    grid-template-columns: minmax(min-content, auto) minmax(min-content, 470px);
+    column-gap: 80px;
+  }
+}

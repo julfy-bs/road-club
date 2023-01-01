@@ -1,0 +1,17 @@
+@import '../../../../../styles/helpers/mixins/media';
+
+.bicycles__list {
+  display: grid;
+  grid-auto-columns: 100%;
+  grid-auto-flow: column;
+  gap: var(--page-padding-mobile-side);
+
+  @include respond(laptop) {
+    gap: 20px;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+
+  @include respond(desktop) {
+    padding: 90px 0 0;
+  }
+}

@@ -1,0 +1,13 @@
+.button_animation_gradient {
+  background: rgb(36, 180, 126);
+  background: linear-gradient(90deg, rgba(49, 158, 117, 1) 50%, rgba(36, 180, 126, 1) 50%);
+  background-position: bottom right;
+  background-size: 200% 100%;
+  overflow: hidden;
+  transition: background-position 0.3s ease;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-position: bottom left;
+  }
+}

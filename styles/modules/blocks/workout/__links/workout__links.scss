@@ -1,0 +1,13 @@
+@import '../../../../helpers/mixins/media';
+
+.workout__links {
+  color: var(--theme-title-color);
+  display: flex;
+  gap: 30px;
+  transition: color 0.25s ease;
+
+  @include respond(laptop) {
+    align-items: flex-end;
+    grid-row: 4 / 5;
+  }
+}

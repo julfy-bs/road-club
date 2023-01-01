@@ -1,0 +1,9 @@
+.burger__container {
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  width: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

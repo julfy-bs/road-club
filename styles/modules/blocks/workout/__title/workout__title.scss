@@ -1,0 +1,7 @@
+@import '../../../../helpers/mixins/media';
+
+.workout__title {
+  @include respond(laptop) {
+    max-width: 460px;
+  }
+}

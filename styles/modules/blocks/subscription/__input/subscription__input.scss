@@ -1,0 +1,28 @@
+.subscription__input {
+  border: 1px solid var(--theme-border-color);
+  border-radius: 4px;
+  color: var(--theme-title-color);
+  min-height: 50px;
+  padding: 11px 20px;
+  transition: border-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  font-size: 13px;
+
+  &::placeholder {
+    color: var(--theme-title-color);
+    opacity: 0.7;
+    transition: color 0.25s ease;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.subscription__form:focus-within .subscription__input {
+  border-color: var(--theme-border-hover-color);
+  outline: none;
+}
+
+.subscription__form:focus-within .subscription__input::placeholder {
+  color: transparent;
+}

@@ -1,0 +1,13 @@
+@import '../../../helpers/mixins/media';
+
+.burger {
+  align-items: end;
+  display: flex;
+  justify-content: flex-end;
+  align-self: end;
+  max-height: 20px;
+
+  @include respond(tablet) {
+    display: none;
+  }
+}

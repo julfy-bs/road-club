@@ -1,0 +1,10 @@
+@import '../../../../../styles/helpers/mixins/media';
+
+.appearance_position_footer {
+  display: none;
+
+  @include respond(tablet) {
+    margin-top: -10px;
+    display: flex;
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "road-club",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint:fix": "eslint --fix",
+    "prettier:fix": "prettier --write .",
+    "sass-dev": "sass --watch --update --style=expanded ./styles/index.scss/:./styles/main.css",
+    "sass-prod": "sass --no-source-map --style=compressed ./styles/index.scss/:./styles/main.css"
+  },
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "2.8.0",
+    "sass": "^1.56.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julfy-bs/road-club.git"
+  },
+  "author": "Bogdan Sutuzhko <julfy-bs@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julfy-bs/road-club/issues"
+  },
+  "homepage": "https://github.com/julfy-bs/road-club#readme",
+  "publicPath": "./"
+}

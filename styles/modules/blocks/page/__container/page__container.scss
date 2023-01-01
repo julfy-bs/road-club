@@ -1,0 +1,15 @@
+@import '../../../../helpers/mixins/media';
+
+.page__container {
+  width: 100%;
+  max-width: var(--page-max-width);
+  padding: 0 var(--page-padding-mobile-side);
+
+  @include respond(laptop) {
+    padding: 0 var(--page-padding-tablet-side);
+  }
+
+  @include respond(fullhd) {
+    padding: 0 var(--page-padding-desktop-side);
+  }
+}

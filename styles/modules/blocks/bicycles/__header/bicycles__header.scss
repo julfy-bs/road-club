@@ -1,0 +1,13 @@
+@import '../../../../../styles/helpers/mixins/media';
+
+.bicycles__header {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include respond(tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}

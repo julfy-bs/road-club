@@ -1,0 +1,13 @@
+@import '../../../../helpers/mixins/media';
+
+.quote__figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  @include respond(laptop) {
+    justify-content: flex-end;
+    grid-column: 2 / 2;
+    grid-row: 2 / 3;
+  }
+}
