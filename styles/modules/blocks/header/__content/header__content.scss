@@ -1,9 +1,15 @@
+@import '../../../../helpers/mixins/media';
+
 .header__content {
-  align-items: center;
-  align-self: stretch;
+
   box-sizing: border-box;
   display: flex;
   gap: 12px;
   justify-content: flex-end;
   width: 100%;
+
+  @include respond(tablet) {
+    align-self: stretch;
+    align-items: center;
+  }
 }

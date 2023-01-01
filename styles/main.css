@@ -14,7 +14,7 @@
   --page-padding-tablet-side: 36px;
   --page-padding-desktop-side: 120px;
   /* header */
-  --header-height: 56px;
+  --header-height: 74px;
   /* hero-slide */
   --hero-slide-color: #f4f4f4;
   /* bicycles */
@@ -31,7 +31,6 @@
 @media screen and (min-width: 481px) {
   :root {
     --page-padding-side: 12px;
-    --header-height: 74px;
   }
 }
 
@@ -210,13 +209,17 @@
 }
 
 .header__content {
-  align-items: center;
-  align-self: stretch;
   box-sizing: border-box;
   display: flex;
   gap: 12px;
   justify-content: flex-end;
   width: 100%;
+}
+@media screen and (min-width: 481px) {
+  .header__content {
+    align-self: stretch;
+    align-items: center;
+  }
 }
 
 /* navigation */
@@ -269,11 +272,11 @@
 
 /* burger */
 .burger {
-  align-items: center;
+  align-items: end;
   display: flex;
-  justify-content: center;
-  padding: 10px 6px;
-  width: 40px;
+  justify-content: flex-end;
+  align-self: end;
+  max-height: 20px;
 }
 @media screen and (min-width: 481px) {
   .burger {
@@ -302,7 +305,7 @@
   opacity: 0.75;
 }
 
-.burger:hover .burger__line_fraction_third {
+.burger:hover .burger__line_fraction_one-third {
   transform: translate(36%);
 }
 
@@ -310,7 +313,7 @@
   transform: translate(0);
 }
 
-.burger:hover .burger__line_fraction_ninth {
+.burger:hover .burger__line_fraction_one-ninth {
   transform: translate(11%);
 }
 
@@ -325,7 +328,7 @@
 
 .section_lined_top {
   border-top: 1px solid var(--theme-border-color);
-  margin-top: 20px;
+  padding-top: 20px;
 }
 @media screen and (min-width: 769px) {
   .section_lined_top {
@@ -676,15 +679,19 @@
 
 .surface__wrapper {
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
   overflow: hidden;
   position: relative;
   width: 100%;
 }
+
+.surface__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 40px;
+}
 @media screen and (min-width: 769px) {
-  .surface__wrapper {
+  .surface__content {
     gap: 50px;
   }
 }
@@ -747,7 +754,7 @@
   gap: 10px;
   position: absolute;
   right: var(--page-padding-mobile-side);
-  top: 7px;
+  top: 47px;
 }
 @media screen and (min-width: 769px) {
   .surface__controllers {
@@ -875,9 +882,13 @@
 
 .bicycles__wrapper {
   box-sizing: border-box;
+}
+
+.bicycles__content {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-top: 40px;
 }
 
 .bicycles__header {
@@ -986,7 +997,7 @@
 .bicycles__feed-item_active {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
 .bicycles__list {
@@ -1033,7 +1044,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5px;
   padding: 16px;
   box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.04);
   height: 100%;
@@ -1099,8 +1109,8 @@
 }
 
 .bicycles__pagination-item {
-  width: 14px;
-  height: 14px;
+  width: 4px;
+  height: 4px;
   display: inline-flex;
   background-color: var(--bicycles-pagination-item);
   border-radius: 50%;
@@ -1128,12 +1138,16 @@
 
 .workout__wrapper {
   box-sizing: border-box;
+}
+
+.workout__content {
   display: grid;
   gap: 40px;
   grid-template-columns: 1fr;
+  padding-top: 40px;
 }
 @media screen and (min-width: 769px) {
-  .workout__wrapper {
+  .workout__content {
     grid-auto-rows: min-content;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1176,6 +1190,11 @@
   }
 }
 
+.workout__item {
+  display: inline-flex;
+  max-height: fit-content;
+}
+
 .workout__link {
   font-size: 14px;
   font-weight: 600;
@@ -1198,7 +1217,7 @@
   background-color: var(--theme-background-footer);
   display: flex;
   justify-content: center;
-  padding: 80px 0 16px;
+  padding: 60px 0 16px;
   color: var(--theme-title-color);
   transition: background-color 0.5s ease, color 0.25s ease;
 }
@@ -1209,6 +1228,7 @@
 }
 @media screen and (min-width: 769px) {
   .footer {
+    padding-top: 80px;
     padding-bottom: 60px;
   }
 }
@@ -1217,7 +1237,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 93px;
 }
 
 .footer__content {

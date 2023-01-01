@@ -1,15 +1,6 @@
-@import '../../../../helpers/mixins/media';
-
 .surface__wrapper {
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
   overflow: hidden;
   position: relative;
   width: 100%;
-
-  @include respond(laptop) {
-    gap: 50px;
-  }
 }
