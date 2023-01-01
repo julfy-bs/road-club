@@ -79,7 +79,7 @@ const setSlideActive = (slide) => {
   slidesContentArray[slide].classList.add(activeClass);
   slidesImageArray[slide].classList.add(activeClass);
 };
-const moveContentSlider = (slide) => `translateX(calc(100% * ${slide} * -1)`;
+const moveContentSlider = (slide) => `translateX(calc((100% + 10px) * ${slide} * -1)`;
 const moveImageSlider = (slide) => {
   const gap = '40px';
   return `translateX(calc((50% + 10px + (${gap} / 2)) * ${slide} * -1)`;

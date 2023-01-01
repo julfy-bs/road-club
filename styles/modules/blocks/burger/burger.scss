@@ -1,11 +1,11 @@
 @import '../../../helpers/mixins/media';
 
 .burger {
-  align-items: center;
+  align-items: end;
   display: flex;
-  justify-content: center;
-  padding: 10px 6px;
-  width: 40px;
+  justify-content: flex-end;
+  align-self: end;
+  max-height: 20px;
 
   @include respond(tablet) {
     display: none;
