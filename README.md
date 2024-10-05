@@ -1,10 +1,12 @@
 # Проект "Road club" :mountain_bicyclist:
-***
 
 "Road club" - лэндинг на тему велоспорта. 
 Является дополнительным заданием к четвертому спринту - проектному месяцу.
 
 Работа выполнена на курсе [Web+][yandex-practicum-web-plus] от [Yandex Практикум][yandex-practicum-url] в соответствии со всеми пунктами [стандартов Яндекс.Практикума по оформлению HTML и CSS кода][yandex-styleguide].
+
+![image](https://github.com/user-attachments/assets/6665c419-88d1-4cfb-b71c-fe0197916a3b)
+
 
 ## Цель проекта
 
